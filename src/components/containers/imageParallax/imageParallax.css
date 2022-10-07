@@ -1,0 +1,29 @@
+#stars
+{
+  z-index: 100;
+}
+
+#moon
+{
+  z-index: 200;
+}
+
+#mountain
+{
+  z-index: 400;
+}
+
+#rocks
+{
+  z-index: 500;
+}
+
+#wolf
+{
+  z-index: 600;
+}
+
+#water
+{
+  z-index: 700;
+}

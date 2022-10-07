@@ -1,0 +1,22 @@
+.header_label
+{
+  list-style: none;
+  margin-left: 1vw;
+}
+
+.header_label a
+{
+  text-decoration: none;
+  padding: .3vw .8vw;
+  color: #fff;
+  border-radius: 2vw;
+  font-size: 1.21vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header_label a:hover,
+.header_label a.active
+{
+  background: #22104A;
+  color: #fff;
+}
