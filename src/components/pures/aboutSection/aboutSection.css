@@ -1,0 +1,63 @@
+.aboutSection
+{
+  padding-top: 5vh;
+  background: #094b65;
+  min-height: 100vh;
+}
+
+.containerTitle__About
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 20vh;
+  margin: auto;
+}
+
+.containerTitle__About div
+{
+  font-size:  3.5vw;
+  color: #fff;
+  width: 40vw;
+  height: 10vh;
+}
+
+.rotate_words span
+{
+  width: max-content;
+  font-family: 'Rancho', cursive;
+  letter-spacing: .2vw;
+  font-weight: 300;
+  position: absolute;
+  background-color: #22104A;
+  padding-inline: 1vw;
+  color: #fff;
+  border-radius: 0.4vw;
+  opacity: 0;
+  transform-origin: 10% 75%;
+  animation: rotateWords 12s var(--d) linear infinite;
+}
+
+@keyframes rotateWords
+{
+  5%
+  {
+    opacity: 1;
+  }
+  10%,
+  20%
+  {
+    opacity: 1;
+    transform: rotate(3deg);
+  }
+  15%
+  {
+    transform: rotate(-1deg);
+  }
+  25%
+  {
+    opacity: 0;
+    transform: translate(90px) rotate(10deg);
+  }
+}

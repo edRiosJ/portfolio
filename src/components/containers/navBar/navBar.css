@@ -1,0 +1,27 @@
+#header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3vh 5.3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
+#header .logo
+{
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.7vw;
+  text-decoration: none;
+}
+
+#header ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
