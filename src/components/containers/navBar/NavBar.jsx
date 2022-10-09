@@ -6,12 +6,12 @@ function NavBar()
 {
   return (
     <header id="header">
-      <a
-        href="w"
-        className="logo"
-      >
-        Eduardo Rios
-      </a>
+      <div id="containerLogo">
+        <div id="imageLogo" />
+        <div id="textLogo">
+          EDR
+        </div>
+      </div>
       <ul>
         <HeaderLabel nameLabel="Inicio" />
         <HeaderLabel nameLabel="Sobre mí" />
