@@ -23,11 +23,9 @@ function ParallaxSection()
     <section className="parallaxSection">
       <h2
         id="text"
-        style={{ top: `${50 + scroll * -0.5}%` }}
+        style={{ top: `${50 + scroll * -1.0}%` }}
       >
-        <span>Let’s get started</span>
-        <br />
-        Hello!!
+        Hola!!
       </h2>
       <ImageParallax image={stars} />
       <ImageParallax
