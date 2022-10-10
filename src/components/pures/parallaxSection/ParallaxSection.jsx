@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageParallax from '../../containers/imageParallax/ImageParallax';
+import ScrollContext from '../../../context/scroll/ScrollContext.js';
 import './parallaxSection.css';
 import moon from '../../../img/moon.svg';
 import mountain from '../../../img/mountain.svg';
@@ -10,39 +11,36 @@ import wolf from '../../../img/wolf.svg';
 
 function ParallaxSection()
 {
-  const [scroll, setScroll] = React.useState(0);
+  const { scrollValue, setScroll } = React.useContext(ScrollContext);
 
-  const handleScroll = () => setScroll(window.scrollY);
-
-  React.useEffect(() =>
-  {
-    window.addEventListener('scroll', handleScroll);
+  React.useEffect(() => {
+    window.addEventListener('scroll', setScroll);
   }, []);
 
   return (
     <section className="parallaxSection">
       <h2
         id="text"
-        style={{ top: `${50 + scroll * -1.0}%` }}
+        style={{ top: `${50 + scrollValue * -1.0}%` }}
       >
         Hola!!
       </h2>
       <ImageParallax image={stars} />
       <ImageParallax
         image={mountain}
-        styleValue={{ top: `${scroll * 0.25}px` }}
+        styleValue={{ top: `${scrollValue * 0.25}px` }}
       />
       <ImageParallax
         image={moon}
-        styleValue={{ top: `${scroll * -3}px` }}
+        styleValue={{ top: `${scrollValue * -3}px` }}
       />
       <ImageParallax
         image={rocks}
-        styleValue={{ top: `${scroll * -0.12}px` }}
+        styleValue={{ top: `${scrollValue * -0.12}px` }}
       />
       <ImageParallax
         image={wolf}
-        styleValue={{ left: `${scroll * 2}px` }}
+        styleValue={{ left: `${scrollValue * 2}px` }}
       />
       <ImageParallax image={water} />
     </section>
