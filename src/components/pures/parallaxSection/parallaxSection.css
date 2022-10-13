@@ -16,8 +16,8 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 9vh;
-  background: linear-gradient(to top, #094b65, transparent);
+  height: 12vh;
+  background: linear-gradient(to top, #C5F8FB, transparent);
   z-index: 800;
 }
 
