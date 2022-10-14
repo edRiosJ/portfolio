@@ -1,0 +1,37 @@
+.modal
+{
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  padding-top: 10vh;
+}
+
+.modal.modal-open
+{
+  display: flex;
+}
+
+.modal-container
+{
+  position:absolute;
+  padding: 1rem;
+  width: 80%;
+  /* min-height: 150vh; */
+  background-color: #fff;
+  /* overflow: scroll; */
+}
+
+.modal-close
+{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
