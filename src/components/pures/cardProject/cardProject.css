@@ -1,0 +1,144 @@
+.imageProject
+{
+  width: 28vw;
+  height: 20vh;
+  padding: 0.5vw;
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
+  border-radius: 0.9vw;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  cursor: pointer;
+  transition: .5s;
+}
+
+.imageProject:hover
+{
+  border: 1px solid #175CAD;
+  width:30vw;
+  height: 22vh;
+}
+
+.imageProject img,
+.logoModal img,
+.imageDeployCard img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.imageProject p
+{
+  width: max-content;
+  margin: auto;
+  margin-top: 5%;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 5vw;
+  font-weight: 900;
+}
+
+.logoModal
+{
+  width: 100%;
+  height: 40vh;
+  border-radius: 0.4vw;
+  background-color: #fff;
+}
+
+.sectionModal
+{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  margin-top: 2vh;
+}
+
+.leftPanel
+{
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.deployCardModal,
+.repositoryCardModal
+{
+  width: 100%;
+  height: 29vh;
+  background-color: #fff;
+  border-radius: 0.4vw;
+}
+
+.repositoryCardModal
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.repositoryCardModal p
+{
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.repositoryCardModal a
+{
+  cursor: pointer;
+}
+
+.repositoryCardModal a:visited
+{
+  color: #000;
+}
+
+.descriptionCardModal
+{
+  width: 72%;
+  background-color: #fff;
+  border-radius: 0.4vw;
+}
+
+.techCardModal
+{
+  width: 100%;
+  height: 30vh;
+  margin-top: 2vh;
+  background-color: #fff;
+  border-radius: 0.4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.videoModal
+{
+  width: 100%;
+  height: 30vh;
+  background-color: #fff;
+  margin-top: 2vh;
+  border-radius: 0.4vw;
+}
+
+.imageDeployCard
+{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.descriptionCardModal
+{
+  padding: 2.5vw;
+  text-align: justify;
+  font-size: 1.2vw;
+}
