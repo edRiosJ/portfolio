@@ -8,8 +8,12 @@ import {
   SiExpress,
   SiSequelize,
   SiPostgresql,
+  SiChakraui,
+  SiAuth0,
+  SiMongodb,
 } from 'react-icons/si';
 import logoYourCountry from '../img/logoYourCountry.svg';
+import padelApp from '../img/padelApp.png';
 import yourCountry from '../img/yourCountry.png';
 
 const dataProjects = [
@@ -36,12 +40,13 @@ const dataProjects = [
       { color: '#52B0E7', name: 'Sequelize', icon: <SiSequelize /> },
       { color: '#336791', name: 'PostgresSQL', icon: <SiPostgresql /> },
     ],
+    linkVideo: 'https://youtu.be/f-wBPwd9FKA',
   },
   {
     logoProject: <p>PadelApp</p>,
     altImage: 'PadelApp',
     linkDeployProject: 'https://padelapp.netlify.app',
-    imageDeploy: yourCountry,
+    imageDeploy: padelApp,
     linkRepositoryProject: 'https://github.com/pfpadelapp',
     descriptionProyect: [
       'Aplicación que tiene como objetivo simplificar la interacción entre el usuario que quiere reservar una cancha de padel y los propietarios de las mismas.',
@@ -55,10 +60,15 @@ const dataProjects = [
     icons: [
       { color: '#F7E018', name: 'JavaScript', icon: <SiJavascript /> },
       { color: '#61DAFB', name: 'React', icon: <SiReact /> },
+      { color: '#764ABC', name: 'Redux Toolkit', icon: <SiRedux /> },
+      { color: '#5EC9CA', name: 'Chakra UI', icon: <SiChakraui /> },
       { color: '#121212', name: 'ReactRouter', icon: <SiReactrouter /> },
+      { color: '#EB5424', name: 'Auth0', icon: <SiAuth0 /> },
       { color: '#43853D', name: 'Node.js', icon: <SiNodedotjs /> },
       { color: '#353535', name: 'Express', icon: <SiExpress /> },
+      { color: '#008000', name: 'MongoDB', icon: <SiMongodb /> },
     ],
+    linkVideo: 'https://www.youtube.com/watch?v=Ruw-wEPetV4',
   },
 ];
 

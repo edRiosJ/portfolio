@@ -25,6 +25,7 @@ function CardProject({
     linkRepositoryProject,
     descriptionProyect,
     icons,
+    linkVideo,
   } = dataProject;
   return (
     <div className="cardProject">
@@ -81,7 +82,13 @@ function CardProject({
         </div>
 
         <div className="videoModal">
-          <p>video</p>
+          <iframe
+            src={linkVideo}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
         </div>
       </Modal>
     </div>
@@ -104,6 +111,7 @@ CardProject.propTypes = {
           icon: PropTypes.node.isRequired,
         },
       )).isRequired,
+      linkVideo: PropTypes.string.isRequired,
     },
   )).isRequired,
   functionOpenModal: PropTypes.func.isRequired,
