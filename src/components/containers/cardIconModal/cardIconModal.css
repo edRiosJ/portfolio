@@ -1,0 +1,8 @@
+.cardIconModal
+{
+  display: flex;
+  flex-direction: column;
+  justify-self: space-evenly;
+  align-items: center;
+  margin: 1vw 1vw 0vw 1vw;
+}
