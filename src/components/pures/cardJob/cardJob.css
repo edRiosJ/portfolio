@@ -1,0 +1,55 @@
+.cardJob
+{
+  width: 100%;
+  min-height: max-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.cardJob img,
+.containerData
+{
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
+  border-radius: 0.9vw;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.cardJob img
+{
+  width: 20vw;
+  height: 20vw;
+  padding: 0.5vw;
+  object-fit: cover;
+}
+
+.containerData
+{
+  width: 70%;
+  min-height: max-content;
+  padding: 1.5vw;
+}
+
+.containerData h3
+{
+  font-size: 1.8vw;
+}
+
+.containerData h4
+{
+  font-size: 1.4vw;
+}
+
+.containerData h5
+{
+  font-size: 1.2vw;
+}
+
+.containerData p
+{
+  font-size: 1.3vw;
+}
