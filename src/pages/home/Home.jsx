@@ -3,6 +3,7 @@ import ParallaxSection from '../../components/pures/parallaxSection/ParallaxSect
 import AboutSection from '../../components/pures/aboutSection/AboutSection.jsx';
 import ProjectsSection from '../../components/pures/projectsSection/ProjectsSection';
 import ExperienceSection from '../../components/pures/experienceSection/ExperienceSection';
+import SkillsSection from '../../components/pures/skillsSection/SkillsSection';
 
 function Home()
 {
@@ -12,6 +13,7 @@ function Home()
       <AboutSection />
       <ProjectsSection />
       <ExperienceSection />
+      <SkillsSection />
     </>
   );
 }
