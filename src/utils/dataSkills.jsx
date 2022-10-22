@@ -67,7 +67,7 @@ const dataSkills = [
   },
   {
     color: '#336791',
-    name: 'PostgresSQL',
+    name: 'PostgreSQL',
     icon: <SiPostgresql />,
   },
   {
