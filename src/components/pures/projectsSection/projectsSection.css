@@ -1,9 +1,9 @@
 .projectsSection
 {
   padding-top: 7vh;
-  min-height: 100vh;
+  min-height: max-content;
   background-color: #C5F8FB;
-  background-image: url('../../../img/waveLight2.svg');
+  background-image: url('../../../img/waveLightSmall.svg');
   background-repeat: no-repeat;
 }
 
