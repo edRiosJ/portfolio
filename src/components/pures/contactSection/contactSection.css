@@ -1,0 +1,180 @@
+.contactSection
+{
+  padding-top: 7vh;
+  min-height: max-content;
+  background-color: #FFFFFF;
+  background-image: url('../../../img/waveLight2.svg');
+  background-repeat: no-repeat;
+}
+
+.contactSection h2
+{
+  font-size:  3.5vw;
+  font-weight: 500;
+  color: #000;
+  width: 30vw;
+  height: 10vh;
+  margin: auto;
+  text-align: center;
+}
+
+.contactContainer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: max-content;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-top: 5vh;
+}
+
+.form
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 60vh;
+  padding: 2vw;
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
+  border-radius: 0.9vw;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin-bottom: 10vh;
+}
+
+.mainFormContainer
+{
+  display: flex;
+  width: 100%;
+  height: 85%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mainFormContainer_panelLeft,
+.mainFormContainer_panelRight
+{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.secondaryFormContainer
+{
+  margin: 1vw;
+}
+
+.inputBox
+{
+  position: relative;
+  width: 85%;
+  margin: 1vw;
+}
+
+.inputBox input,
+#message
+{
+  width: 100%;
+  height: 7.25vh;
+  padding: 0.75vw;
+  border: 0.1vw solid #175CAD;
+  background: transparent;
+  border-radius: 0.4vw;
+  outline: none;
+  color: #000;
+  font-size: 1.2vw;
+}
+
+#message
+{
+  height: 32.5vh;
+  resize: none;
+}
+
+.inputBox span
+{
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  color: #fff;
+  transform: translateX(0.75vw) translateY(-1.1vh);
+  font-size: 0.8vw;
+  padding: 0 0.75vw;
+  background: #175CAD;
+  letter-spacing: 0.16vw;
+}
+
+.inputBox label
+{
+  color: red;
+}
+
+.btnSend
+{
+  width: 9vw;
+  height: 7vh;
+  padding: .6vw 1vw;
+  color: #ffffff;
+  background-color: #175CAD;
+  font-size: 1.3vw;
+  border-radius: 0.3vw;
+  outline: none;
+  border: none;
+  letter-spacing: 0.1vw;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.iconConf
+{
+  color: #ffffff;
+  font-size: 1.5vw;
+  transition: all .5s;
+}
+
+.btnSend span
+{
+  transition: 0.5s;
+}
+
+.btnSend:hover
+{
+  background-color: #2f7acf;
+}
+
+.btnSend:hover span
+{
+  transform: translateY(10vh);
+}
+
+.btnSend:hover .iconConf
+{
+    transform: translateX(2.4vw) rotate(45deg) scale(2);
+    animation: send 1.5s infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes send
+{
+  0%
+  {
+    transform: translateX(2.4vw) rotate(45deg) scale(2);
+  }
+  100%
+  {
+    transform: translateX(5vw) rotate(45deg) scale(2);
+  }
+}
