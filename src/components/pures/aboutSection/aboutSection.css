@@ -2,7 +2,8 @@
 {
   padding-top: 7vh;
   min-height: 100vh;
-  background-image: url('../../../img/wave.svg');
+  background-color: #22104A;
+  background-image: url('../../../img/waveDark.svg');
   background-repeat: no-repeat;
 
 }
@@ -21,7 +22,7 @@
 {
   font-size:  3.5vw;
   font-weight: 500;
-  color: #000;
+  color: #FFFFFF;
   width: 40vw;
   height: 10vh;
 }
@@ -35,7 +36,7 @@
   position: absolute;
   background-color: #175CAD;
   padding-inline: 1vw;
-  color: #fff;
+  color: #000000;
   border-radius: 0.4vw;
   opacity: 0;
   transform-origin: 10% 75%;
@@ -122,6 +123,7 @@
   padding: 3vw;
   text-align: justify;
   font-size: 18px;
+  color: #FFFFFF;
   background: rgba( 255, 255, 255, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 7.5px );
