@@ -1,0 +1,43 @@
+.footer,
+.socialMedia
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer
+{
+  height: 10vw;
+  background-color: rgb(119, 113, 113);
+}
+
+.footer > div
+{
+  width: 30vw;
+}
+
+.footer_panelLeft
+{
+  font-size: 1.3vw;
+}
+
+.socialMedia
+{
+  width: 15vw;
+  height: 5vw;
+  margin: auto;
+}
+
+.footer_panelRight
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer_panelRight img
+{
+  width: 4vw;
+  height: 4vw;
+  object-fit: contain;
+}
