@@ -2,8 +2,8 @@
 {
   padding-top: 7vh;
   min-height: max-content;
-  background-color: #FFFFFF;
-  background-image: url('../../../img/waveLightSmall2.svg');
+  background-color: #22104A;
+  background-image: url('../../../img/waveDarkSmall.svg');
   background-repeat: no-repeat;
 }
 
@@ -11,7 +11,7 @@
 {
   font-size:  3.5vw;
   font-weight: 500;
-  color: #000;
+  color: #FFFFFF;
   width: 30vw;
   height: 10vh;
   margin: auto;
