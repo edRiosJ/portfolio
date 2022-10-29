@@ -21,7 +21,7 @@ function ParallaxSection()
     <section className="parallaxSection">
       <h2
         id="text"
-        style={{ top: `${50 + scrollValue * -1.0}%` }}
+        style={{ top: `${50 + scrollValue * -0.3}%` }}
       >
         Hola!!
       </h2>
@@ -32,7 +32,7 @@ function ParallaxSection()
       />
       <ImageParallax
         image={moon}
-        styleValue={{ top: `${scrollValue * -3}px` }}
+        styleValue={{ top: `${scrollValue * -1}px` }}
       />
       <ImageParallax
         image={rocks}
