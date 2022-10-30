@@ -1,11 +1,10 @@
 .aboutSection
 {
-  padding-top: 7vh;
-  min-height: 100vh;
+  padding-top: 2vw;
+  min-height: 49.65vw;
   background-color: #22104A;
   background-image: url('../../../img/waveDark.svg');
   background-repeat: no-repeat;
-
 }
 
 .containerTitle__About
@@ -13,8 +12,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 90%;
-  height: 20vh;
+  width: 90vw;
+  height: 10vw;
   margin: auto;
 }
 
@@ -24,7 +23,7 @@
   font-weight: 500;
   color: #FFFFFF;
   width: 40vw;
-  height: 10vh;
+  height: 5vw;
 }
 
 .rotate_words span
@@ -71,21 +70,21 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
-  min-height: 80vh;
+  width: 100vw;
+  height: 40vw;
 }
 
 .aboutBody > div
 {
-  width: 30%;
-  min-height: 80vh;
+  width: 30vw;
+  height: 40vw;
 }
 
 .aboutBody article
 {
-  width: 70%;
-  min-height: 80vh;
-  padding: 5vh;
+  width: 70vw;
+  height: 40vw;
+  padding: 2.5vw;
 }
 
 .aboutImage
@@ -103,13 +102,13 @@
 .image
 {
   width: 25vw;
-  height: 60vh;
+  height: 30vw;
   background: rgba( 255, 255, 255, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 7.5px );
   -webkit-backdrop-filter: blur( 7.5px );
   border-radius: 0.9vw;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 0.1vw solid rgba( 255, 255, 255, 0.18 );
   background-image: url('../../../img/me.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,16 +117,16 @@
 .aboutBody article div
 {
   width: 55vw;
-  height: 70vh;
+  height: 34.8vw;
   margin: auto;
   padding: 3vw;
   text-align: justify;
-  font-size: 18px;
+  font-size: 1.35vw;
   color: #FFFFFF;
   background: rgba( 255, 255, 255, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 7.5px );
   -webkit-backdrop-filter: blur( 7.5px );
   border-radius: 0.9vw;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 0.1vw solid rgba( 255, 255, 255, 0.18 );
 }
