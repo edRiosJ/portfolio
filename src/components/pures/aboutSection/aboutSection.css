@@ -1,10 +1,11 @@
 .aboutSection
 {
   padding-top: 2vw;
-  min-height: 49.65vw;
+  height: max-content;
   background-color: #22104A;
   background-image: url('../../../img/waveDark.svg');
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .containerTitle__About

@@ -1,10 +1,11 @@
 .projectsSection
 {
-  padding-top: 7vh;
-  min-height: max-content;
+  padding-top: 4vw;
+  height: max-content;
   background-color: #094B65;
   background-image: url('../../../img/waveDarkSmall2.svg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .projectsSection h2
@@ -13,7 +14,7 @@
   font-weight: 500;
   color: #FFFFFF;
   width: 30vw;
-  height: 10vh;
+  height: 5vw;
   margin: auto;
   text-align: center;
 }
