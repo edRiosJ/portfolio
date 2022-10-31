@@ -1,7 +1,7 @@
 import React from 'react';
 import dataExpierence from '../../../utils/dataExpierence.js';
 import CardJob from '../cardJob/CardJob.jsx';
-import './expierenceSection.css';
+import './experienceSection.css';
 
 function ExperienceSection()
 {
