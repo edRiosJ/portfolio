@@ -9,7 +9,7 @@ function NavBar()
       <div id="containerLogo">
         <div id="imageLogo" />
         <div id="textLogo">
-          EDR
+          <span>EDR</span>
         </div>
       </div>
       <ul>

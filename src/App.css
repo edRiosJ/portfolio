@@ -18,3 +18,8 @@
   background: #fff;
   min-height: 100vh;
 }
+
+::-webkit-scrollbar
+{
+    width: 0vw;
+}

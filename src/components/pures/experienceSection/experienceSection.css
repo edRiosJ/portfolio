@@ -1,10 +1,11 @@
 .experienceSection
 {
-  padding-top: 7vh;
-  min-height: 100vh;
+  padding-top: 2vw;
+  height: max-content;
   background-color: #22104A;
   background-image: url('../../../img/waveDark.svg');
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .experienceSection h2
@@ -13,7 +14,7 @@
   font-weight: 500;
   color: #FFFFFF;
   width: 30vw;
-  height: 10vh;
+  height: 5vw;
   margin: auto;
   text-align: center;
 }
@@ -24,9 +25,9 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   min-height: max-content;
   padding-left: 5vw;
   padding-right: 5vw;
-  margin-top: 3vh;
+  margin-top: 1.5vw;
 }
