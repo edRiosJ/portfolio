@@ -1,10 +1,11 @@
 .skillsSection
 {
-  padding-top: 7vh;
-  min-height: 100vh;
+  padding-top: 2vw;
+  height: max-content;
   background-color: #094B65;
   background-image: url('../../../img/waveDark2.svg');
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .skillsSection h2
@@ -13,9 +14,10 @@
   font-weight: 500;
   color: #FFFFFF;
   width: 30vw;
-  height: 10vh;
+  height: 5vw;
   margin: auto;
   text-align: center;
+  margin-top: 5vw;
 }
 
 .skillsContainer
@@ -24,9 +26,9 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
-  min-height: max-content;
+  width: 100vw;
+  height: max-content;
   padding-left: 5vw;
   padding-right: 5vw;
-  margin-top: 3vh;
+  margin-top: 1.5vw;
 }
