@@ -92,7 +92,7 @@ function ContactSection()
                     </div>
                   </div>
                   <div className="mainFormContainer_panelRight">
-                    <div className="inputBox">
+                    <div className="inputBox_message">
                       <Field id="message" name="message" as="textarea" />
                       <span>Mensaje</span>
                       {errors.message && touched.message && (<label>{errors.message}</label>)}
