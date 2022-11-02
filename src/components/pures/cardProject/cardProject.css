@@ -15,9 +15,7 @@
 
 .imageProject:hover
 {
-  border: 1px solid #175CAD;
-  width:30vw;
-  height: 22vh;
+  background: rgba( 23, 92, 173, 0.2 );
 }
 
 .imageProject img,
