@@ -13,7 +13,7 @@ function ProjectsSection()
   const [isOpenModalPadelApp, openModalPadelApp, closeModalPadelApp] = useModal(false);
 
   return (
-    <section className="projectsSection">
+    <section className="projectsSection" id="projects">
       <h2>Proyectos</h2>
       <div className="projectsContainer">
         <CardProject

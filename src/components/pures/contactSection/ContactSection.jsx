@@ -55,7 +55,7 @@ function ContactSection()
   };
 
   return (
-    <section className="contactSection">
+    <section className="contactSection" id="contact">
       <h2>Contacto</h2>
       <div className="contactContainer">
         <Formik
