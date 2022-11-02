@@ -6,7 +6,7 @@ import './certificationsSection.css';
 function CertificationsSection()
 {
   return (
-    <section className="certificationsSection">
+    <section className="certificationsSection" id="certifications">
       <h2>Certificaciones</h2>
       <div className="certificationsContainer">
         {

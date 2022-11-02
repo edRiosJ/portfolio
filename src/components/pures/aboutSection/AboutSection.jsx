@@ -1,10 +1,14 @@
 import React from 'react';
+// import ScrollContext from '../../../context/scroll/ScrollContext.js';
 import './aboutSection.css';
 
 function AboutSection()
 {
+  // const { scrollValue } = React.useContext(ScrollContext);
+
   return (
-    <section className="aboutSection">
+    <section className="aboutSection" id="about">
+      {/* {console.log(`scroll: ${scrollValue}`)} */}
       <div className="containerTitle__About">
         <div>Me llamo Eduardo, soy </div>
         <div className="rotate_words">

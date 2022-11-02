@@ -18,7 +18,7 @@ function ParallaxSection()
   }, []);
 
   return (
-    <section className="parallaxSection">
+    <section className="parallaxSection" id="home">
       <h2
         id="text"
         style={{ top: `${50 + scrollValue * -0.3}%` }}
