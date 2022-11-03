@@ -1,6 +1,6 @@
 .contactSection
 {
-  padding-top: 2vw;
+  padding-top: 6vw;
   height: max-content;
   background-color: #094B65;
   background-image: url('../../../img/waveDark2.svg');
@@ -22,13 +22,21 @@
 .contactContainer
 {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100vw;
   height: max-content;
   padding-left: 5vw;
   padding-right: 5vw;
   margin-top: 2.55vw;
+}
+
+.containerCV
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .form
@@ -133,7 +141,8 @@
   font-size: 1.2vw;
 }
 
-.btnSend
+.btnSend,
+.btnDownCV
 {
   width: 9vw;
   height: 3.47vw;
@@ -150,6 +159,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  text-decoration: none;
   transition: all 0.5s;
 }
 
@@ -160,17 +170,20 @@
   transition: all .5s;
 }
 
-.btnSend span
+.btnSend span,
+.btnDownCV span
 {
   transition: 0.5s;
 }
 
-.btnSend:hover
+.btnSend:hover,
+.btnDownCV:hover
 {
   background-color: #2f7acf;
 }
 
-.btnSend:hover span
+.btnSend:hover span,
+.btnDownCV:hover span
 {
   transform: translateY(10vh);
 }
@@ -178,18 +191,9 @@
 .btnSend:hover .iconConf
 {
     transform: translateX(2.4vw) rotate(45deg) scale(2);
-    animation: send 1.5s infinite;
-    animation-delay: 0.5s;
 }
 
-@keyframes send
+.btnDownCV:hover .iconConf
 {
-  0%
-  {
-    transform: translateX(2.4vw) rotate(45deg) scale(2);
-  }
-  100%
-  {
-    transform: translateX(5vw) rotate(45deg) scale(2);
-  }
+  transform: translateX(2.4vw) scale(2);
 }

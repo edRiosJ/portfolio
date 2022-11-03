@@ -33,6 +33,15 @@
 .modal-close
 {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: -1vw;
+  right: -1.5vw;
+  width: 4.5vw;
+  height: 3.8vw;
+  border-radius: 0.4vw;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }

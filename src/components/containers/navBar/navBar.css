@@ -1,13 +1,14 @@
 #header
 {
-  position: absolute;
+  position: sticky;
+  top: 0;
   width: 100vw;
   height: 5.15vw;
   padding: 2vw 5.3vw;
   display: flex;
   justify-content: space-between;
+  background-color: #175CAD;
   align-items: center;
-  background-color: transparent;
   z-index: 10000;
 }
 

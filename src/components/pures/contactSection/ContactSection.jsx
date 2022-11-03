@@ -4,8 +4,10 @@ import React from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { Formik, Form, Field } from 'formik';
-import { RiSendPlaneFill } from 'react-icons/ri';
+import { FcBusinessman } from 'react-icons/fc';
+import { RiDownload2Fill, RiSendPlaneFill } from 'react-icons/ri';
 import { IconContext } from 'react-icons';
+import CV from '../../../files/CV Eduardo Rios.pdf';
 import validateContactFormSchema from '../../../utils/validateForm.js';
 import './contactSection.css';
 
@@ -55,7 +57,7 @@ function ContactSection()
   };
 
   return (
-    <section className="contactSection">
+    <section className="contactSection" id="contact">
       <h2>Contacto</h2>
       <div className="contactContainer">
         <Formik
@@ -112,6 +114,17 @@ function ContactSection()
             )
           }
         </Formik>
+        <div className="containerCV">
+          <IconContext.Provider value={{ size: '15vw' }}>
+            <FcBusinessman />
+          </IconContext.Provider>
+          <a type="button" href={CV} className="btnDownCV" download="CV Eduardo Rios">
+            <IconContext.Provider value={{ className: 'iconConf' }}>
+              <RiDownload2Fill />
+            </IconContext.Provider>
+            <span>Mi CV</span>
+          </a>
+        </div>
       </div>
     </section>
   );
