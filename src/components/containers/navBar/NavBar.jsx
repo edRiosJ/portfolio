@@ -9,15 +9,17 @@ function NavBar()
       <div id="containerLogo">
         <div id="imageLogo" />
         <div id="textLogo">
-          EDR
+          <span>EDR</span>
         </div>
       </div>
       <ul>
-        <HeaderLabel nameLabel="Inicio" />
-        <HeaderLabel nameLabel="Sobre mí" />
-        <HeaderLabel nameLabel="Proyectos" />
-        <HeaderLabel nameLabel="Tecnologías" />
-        <HeaderLabel nameLabel="Contacto" />
+        <HeaderLabel nameLabel="Inicio" directionScroll="home" />
+        <HeaderLabel nameLabel="Sobre mí" directionScroll="about" />
+        <HeaderLabel nameLabel="Proyectos" directionScroll="projects" />
+        <HeaderLabel nameLabel="Experiencia" directionScroll="experience" />
+        <HeaderLabel nameLabel="Tecnologías" directionScroll="skills" />
+        <HeaderLabel nameLabel="Certificaciones" directionScroll="certifications" />
+        <HeaderLabel nameLabel="Contacto" directionScroll="contact" />
       </ul>
     </header>
   );

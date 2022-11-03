@@ -1,19 +1,20 @@
 .contactSection
 {
-  padding-top: 7vh;
-  min-height: max-content;
-  background-color: #FFFFFF;
-  background-image: url('../../../img/waveLight2.svg');
+  padding-top: 6vw;
+  height: max-content;
+  background-color: #094B65;
+  background-image: url('../../../img/waveDark2.svg');
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .contactSection h2
 {
   font-size:  3.5vw;
   font-weight: 500;
-  color: #000;
+  color: #FFFFFF;
   width: 30vw;
-  height: 10vh;
+  height: 5vw;
   margin: auto;
   text-align: center;
 }
@@ -21,13 +22,21 @@
 .contactContainer
 {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  width: 100%;
-  min-height: max-content;
+  width: 100vw;
+  height: max-content;
   padding-left: 5vw;
   padding-right: 5vw;
-  margin-top: 5vh;
+  margin-top: 2.55vw;
+}
+
+.containerCV
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .form
@@ -35,32 +44,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
-  height: 60vh;
+  width: 54vw;
+  height: 29.8vw;
   padding: 2vw;
   background: rgba( 255, 255, 255, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 7.5px );
   -webkit-backdrop-filter: blur( 7.5px );
   border-radius: 0.9vw;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  margin-bottom: 10vh;
+  border: 0.1vw solid rgba( 255, 255, 255, 0.18 );
+  margin-bottom: 5vw;
 }
 
 .mainFormContainer
 {
   display: flex;
-  width: 100%;
-  height: 85%;
+  width: 49.75vw;
+  height: 20.15vw;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 1vw;
 }
 
 .mainFormContainer_panelLeft,
 .mainFormContainer_panelRight
 {
-  width: 50%;
-  height: 100%;
+  width: 24.9vw;
+  height: 20.12vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -72,56 +82,70 @@
   margin: 1vw;
 }
 
-.inputBox
+.inputBox,
+.inputBox_message
 {
   position: relative;
-  width: 85%;
+  width: 22vw;
+  height: 5.65vw;
   margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.inputBox_message
+{
+  height: 17vw;
 }
 
 .inputBox input,
 #message
 {
-  width: 100%;
-  height: 7.25vh;
+  width: 21.18vw;
+  height: 3.6vw;
   padding: 0.75vw;
   border: 0.1vw solid #175CAD;
   background: transparent;
   border-radius: 0.4vw;
   outline: none;
-  color: #000;
+  color: #FFFFFF;
   font-size: 1.2vw;
 }
 
 #message
 {
-  height: 32.5vh;
+  height: 16.15vw;
   resize: none;
 }
 
-.inputBox span
+.inputBox span,
+.inputBox_message span
 {
   position: absolute;
   left: 0;
   pointer-events: none;
   text-transform: uppercase;
   color: #fff;
-  transform: translateX(0.75vw) translateY(-1.1vh);
+  transform: translateX(0.75vw) translateY(-0.55vw);
   font-size: 0.8vw;
   padding: 0 0.75vw;
   background: #175CAD;
   letter-spacing: 0.16vw;
 }
 
-.inputBox label
+.inputBox label,
+.inputBox_message label
 {
   color: red;
+  font-size: 1.2vw;
 }
 
-.btnSend
+.btnSend,
+.btnDownCV
 {
   width: 9vw;
-  height: 7vh;
+  height: 3.47vw;
   padding: .6vw 1vw;
   color: #ffffff;
   background-color: #175CAD;
@@ -135,6 +159,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  text-decoration: none;
   transition: all 0.5s;
 }
 
@@ -145,17 +170,20 @@
   transition: all .5s;
 }
 
-.btnSend span
+.btnSend span,
+.btnDownCV span
 {
   transition: 0.5s;
 }
 
-.btnSend:hover
+.btnSend:hover,
+.btnDownCV:hover
 {
   background-color: #2f7acf;
 }
 
-.btnSend:hover span
+.btnSend:hover span,
+.btnDownCV:hover span
 {
   transform: translateY(10vh);
 }
@@ -163,18 +191,9 @@
 .btnSend:hover .iconConf
 {
     transform: translateX(2.4vw) rotate(45deg) scale(2);
-    animation: send 1.5s infinite;
-    animation-delay: 0.5s;
 }
 
-@keyframes send
+.btnDownCV:hover .iconConf
 {
-  0%
-  {
-    transform: translateX(2.4vw) rotate(45deg) scale(2);
-  }
-  100%
-  {
-    transform: translateX(5vw) rotate(45deg) scale(2);
-  }
+  transform: translateX(2.4vw) scale(2);
 }

@@ -1,23 +1,21 @@
 .imageProject
 {
   width: 28vw;
-  height: 20vh;
+  height: 9.9vw;
   padding: 0.5vw;
   background: rgba( 255, 255, 255, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 7.5px );
   -webkit-backdrop-filter: blur( 7.5px );
   border-radius: 0.9vw;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 0.1vw solid rgba( 255, 255, 255, 0.18 );
   cursor: pointer;
   transition: .5s;
 }
 
 .imageProject:hover
 {
-  border: 1px solid #175CAD;
-  width:30vw;
-  height: 22vh;
+  background: rgba( 23, 92, 173, 0.2 );
 }
 
 .imageProject img,
@@ -33,7 +31,7 @@
 {
   width: max-content;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 1.3vw;
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 5vw;
   font-weight: 900;
@@ -41,10 +39,9 @@
 
 .logoModal
 {
-  width: 100%;
-  height: 40vh;
+  width: 77.5vw;
+  height: 19.85vw;
   border-radius: 0.4vw;
-  background-color: #fff;
 }
 
 .logoModal p
@@ -58,17 +55,18 @@
 
 .sectionModal
 {
-  width: 100%;
-  height: 60vh;
+  width: 77.5vw;
+  height: 29.8vw;
   display: flex;
   justify-content: space-between;
   background-color: transparent;
-  margin-top: 2vh;
+  margin-top: 1vw;
 }
 
 .leftPanel
 {
-  width: 26%;
+  width: 20.15vw;
+  height: 29.8vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -79,9 +77,8 @@
 .deployCardModal,
 .repositoryCardModal
 {
-  width: 100%;
-  height: 29vh;
-  background-color: #fff;
+  width: 20.15vw;
+  height: 14.4vw;
   border-radius: 0.4vw;
   padding: 0.5vw;
 }
@@ -112,17 +109,16 @@
 
 .descriptionCardModal
 {
-  width: 72%;
-  background-color: #fff;
+  width: 55.75vw;
+  height: 29.8vw;
   border-radius: 0.4vw;
 }
 
 .techCardModal
 {
-  width: 100%;
-  height: 30vh;
-  margin-top: 2vh;
-  background-color: #fff;
+  width: 77.5vw;
+  height: 14.9vw;
+  margin-top: 1vw;
   border-radius: 0.4vw;
   display: flex;
   flex-wrap: wrap;
@@ -132,29 +128,28 @@
 
 .videoModal
 {
-  width: 80%;
-  height: 50vh;
-  background-color: #fff;
-  margin-top: 2vh;
+  width: 62vw;
+  height: 24.85vw;
+  margin-top: 1vw;
   border-radius: 0.4vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10%;
+  margin-left: 7.75vw;
 }
 
 .videoModal iframe
 {
-  width:90%;
-  height: 90%;
+  width: 55.75vw;
+  height: 22.37vw;
   border-radius: 0.4vw;
   overflow-y: hidden;
 }
 
 .imageDeployCard
 {
-  width: 100%;
-  height: 100%;
+  width: 19.15vw;
+  height: 13.4vw;
   cursor: pointer;
 }
 
@@ -172,7 +167,7 @@
 .techCardModal,
 .videoModal
 {
-  background: #ebebeb;
-  box-shadow: inset -5px -5px 5px #ffffff,
-              inset 5px 5px 5px #cfcfcf;
+  background: #094B65;
+  box-shadow: inset -5px -5px 5px #0a5471,
+              inset 5px 5px 5px #084259;
 }

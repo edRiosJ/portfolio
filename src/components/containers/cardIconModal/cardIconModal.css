@@ -6,3 +6,8 @@
   align-items: center;
   margin: 1vw 1vw 0vw 1vw;
 }
+
+.cardIconModal p
+{
+  font-size: 1.4vw;
+}
