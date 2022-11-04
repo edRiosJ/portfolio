@@ -7,7 +7,7 @@ function CertificationsSection()
 {
   return (
     <section className="certificationsSection" id="certifications">
-      <h2>Certificaciones</h2>
+      <h2 data-aos="fade-up">Certificaciones</h2>
       <div className="certificationsContainer">
         {
           dataCertifications && dataCertifications.map((certification) => (

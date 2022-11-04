@@ -29,7 +29,7 @@ function CardProject({
   } = dataProject;
   return (
     <div className="cardProject">
-      <div className="imageProject" onClick={functionOpenModal}>
+      <div className="imageProject" onClick={functionOpenModal} data-aos="zoom-in-up">
         {
           typeof logoProject === 'string' ? <img src={logoProject} alt={altImage} /> : logoProject
         }

@@ -14,7 +14,7 @@ function CardCertification({ certification })
   } = certification;
 
   return (
-    <div className="cardCertification">
+    <div className="cardCertification" data-aos="zoom-out-up">
       <img src={logoCertification} alt={nameCertification} />
       <div className="cardContainer">
         <h3>{nameCertification}</h3>
