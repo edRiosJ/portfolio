@@ -14,7 +14,7 @@ function ProjectsSection()
 
   return (
     <section className="projectsSection" id="projects">
-      <h2>Proyectos</h2>
+      <h2 data-aos="fade-up">Proyectos</h2>
       <div className="projectsContainer">
         <CardProject
           dataProject={dataProjects[0]}

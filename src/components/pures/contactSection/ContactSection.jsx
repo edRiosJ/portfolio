@@ -58,7 +58,7 @@ function ContactSection()
 
   return (
     <section className="contactSection" id="contact">
-      <h2>Contacto</h2>
+      <h2 data-aos="fade-up">Contacto</h2>
       <div className="contactContainer">
         <Formik
           initialValues={initialState}
@@ -71,7 +71,7 @@ function ContactSection()
         >
           {
             ({ errors, touched }) => (
-              <Form className="form">
+              <Form className="form" data-aos="zoom-in-right">
 
                 <div className="mainFormContainer">
                   <div className="mainFormContainer_panelLeft">
@@ -114,7 +114,7 @@ function ContactSection()
             )
           }
         </Formik>
-        <div className="containerCV">
+        <div className="containerCV" data-aos="zoom-in-left">
           <IconContext.Provider value={{ size: '15vw' }}>
             <FcBusinessman />
           </IconContext.Provider>

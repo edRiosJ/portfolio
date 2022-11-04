@@ -1,15 +1,11 @@
 import React from 'react';
-// import ScrollContext from '../../../context/scroll/ScrollContext.js';
 import './aboutSection.css';
 
 function AboutSection()
 {
-  // const { scrollValue } = React.useContext(ScrollContext);
-
   return (
     <section className="aboutSection" id="about">
-      {/* {console.log(`scroll: ${scrollValue}`)} */}
-      <div className="containerTitle__About">
+      <div className="containerTitle__About" data-aos="fade-up">
         <div>Me llamo Eduardo, soy </div>
         <div className="rotate_words">
           <span style={{ '--d': '0s' }}>Full Stack Web Developer</span>
@@ -18,13 +14,13 @@ function AboutSection()
         </div>
       </div>
       <div className="aboutBody">
-        <div className="aboutImage">
+        <div className="aboutImage" data-aos="fade-up-right">
           <div className="image" />
         </div>
         <article>
-          <div>
+          <div data-aos="fade-up-left">
             <p>
-              🔹 Soy Ingeniero en Ciencias de la Computación, desarrollador web Full Stack y Técnico en Informática. Siempre he estado interesado por el mundo de la tecnología por lo cual descubrí la programación, despertando en mi una pasión por la misma, paso poco tiempo para darme cuenta que quería desarrollarme profesionalmente en el ámbito de la programación, actualmente estoy interesado en el desarrollo web.
+              🔹 Soy Ingeniero en Ciencias de la Computación, desarrollador web Full Stack y Técnico en Informática. Siempre he estado interesado por el mundo de la tecnología por lo cual descubrí la programación, despertando en mi una pasión por la misma.
             </p>
             <br />
             <p>
