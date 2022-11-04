@@ -1,0 +1,173 @@
+.imageProject
+{
+  width: 28vw;
+  height: 9.9vw;
+  padding: 0.5vw;
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
+  border-radius: 0.9vw;
+  border: 0.1vw solid rgba( 255, 255, 255, 0.18 );
+  cursor: pointer;
+  transition: .5s;
+}
+
+.imageProject:hover
+{
+  background: rgba( 23, 92, 173, 0.2 );
+}
+
+.imageProject img,
+.logoModal img,
+.imageDeployCard img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.imageProject p
+{
+  width: max-content;
+  margin: auto;
+  margin-top: 1.3vw;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 5vw;
+  font-weight: 900;
+}
+
+.logoModal
+{
+  width: 77.5vw;
+  height: 19.85vw;
+  border-radius: 0.4vw;
+}
+
+.logoModal p
+{
+  width: max-content;
+  margin: auto;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 17vw;
+  font-weight: 900;
+}
+
+.sectionModal
+{
+  width: 77.5vw;
+  height: 29.8vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  margin-top: 1vw;
+}
+
+.leftPanel
+{
+  width: 20.15vw;
+  height: 29.8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.deployCardModal,
+.repositoryCardModal
+{
+  width: 20.15vw;
+  height: 14.4vw;
+  border-radius: 0.4vw;
+  padding: 0.5vw;
+}
+
+.repositoryCardModal
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.repositoryCardModal p
+{
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.repositoryCardModal a
+{
+  cursor: pointer;
+}
+
+.repositoryCardModal a:visited
+{
+  color: #000;
+}
+
+.descriptionCardModal
+{
+  width: 55.75vw;
+  height: 29.8vw;
+  border-radius: 0.4vw;
+}
+
+.techCardModal
+{
+  width: 77.5vw;
+  height: 14.9vw;
+  margin-top: 1vw;
+  border-radius: 0.4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.videoModal
+{
+  width: 62vw;
+  height: 24.85vw;
+  margin-top: 1vw;
+  border-radius: 0.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7.75vw;
+}
+
+.videoModal iframe
+{
+  width: 55.75vw;
+  height: 22.37vw;
+  border-radius: 0.4vw;
+  overflow-y: hidden;
+}
+
+.imageDeployCard
+{
+  width: 19.15vw;
+  height: 13.4vw;
+  cursor: pointer;
+}
+
+.descriptionCardModal
+{
+  padding: 2.5vw;
+  text-align: justify;
+  font-size: 1.2vw;
+}
+
+.logoModal,
+.deployCardModal,
+.repositoryCardModal,
+.descriptionCardModal,
+.techCardModal,
+.videoModal
+{
+  background: #094B65;
+  box-shadow: inset -5px -5px 5px #0a5471,
+              inset 5px 5px 5px #084259;
+}

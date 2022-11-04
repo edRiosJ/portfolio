@@ -1,0 +1,45 @@
+.parallaxSection
+{
+  position: relative;
+  width: 100vw;
+  height: 49.65vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.parallaxSection::before
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 99.7vw;
+  height: 5.95vw;
+  background: linear-gradient(to top, #094B65, transparent);
+  z-index: 800;
+}
+
+.parallaxSection img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 49.65vw;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.parallaxSection #text
+{
+  position: absolute;
+  color: #22104A;
+  font-size: 10vw;
+  text-align: center;
+  line-height: 5.5vw;
+  font-family: 'Rancho', cursive;
+  transform: translateY(10%);
+  z-index: 300;
+}

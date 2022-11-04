@@ -1,0 +1,33 @@
+.certificationsSection
+{
+  padding-top: 6vw;
+  height: max-content;
+  background-color: #22104A;
+  background-image: url('../../../img/waveDarkSmall.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.certificationsSection h2
+{
+  font-size:  3.5vw;
+  font-weight: 500;
+  color: #FFFFFF;
+  width: 30vw;
+  height: 5vw;
+  margin: auto;
+  text-align: center;
+}
+
+.certificationsContainer
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100vw;
+  height: max-content;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  margin-top: 1.5vw;
+}

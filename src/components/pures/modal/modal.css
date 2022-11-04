@@ -1,0 +1,47 @@
+.modal
+{
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  padding-top: 7vw;
+}
+
+.modal.modal-open
+{
+  display: flex;
+}
+
+.modal-container
+{
+  position:absolute;
+  top: 2vw;
+  padding: 1.25vw;
+  width: 80vw;
+  height: 96vw;
+  background-color: #094B65;;
+  border-radius: 0.4vw;
+}
+
+.modal-close
+{
+  position: absolute;
+  top: -1vw;
+  right: -1.5vw;
+  width: 4.5vw;
+  height: 3.8vw;
+  border-radius: 0.4vw;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

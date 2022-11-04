@@ -1,0 +1,55 @@
+#header
+{
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 5.15vw;
+  padding: 2vw 5.3vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #175CAD;
+  align-items: center;
+  z-index: 10000;
+}
+
+#containerLogo
+{
+  width: 15vw;
+  height: 5vw;
+  padding-top: 0.1vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#imageLogo
+{
+  width: 5vw;
+  height: 5vw;
+  background-image: url('../../../img/logo1.svg');
+  background-size: contain;
+  background-position: center;
+}
+
+#textLogo
+{
+  width: 9vw;
+  height: 5vw;
+  color: #E94B0C;
+}
+
+#textLogo span
+{
+  font-weight: 900;
+  font-size: 3.6vw;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+#header ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
