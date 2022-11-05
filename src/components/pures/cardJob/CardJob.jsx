@@ -22,7 +22,7 @@ function CardJob({ dataJob })
         <br />
         <div>
           {description && description.map((el) => (
-            <p>
+            <p key={el.slice(10)}>
               {el}
               <br />
               <br />
@@ -35,15 +35,14 @@ function CardJob({ dataJob })
 }
 
 CardJob.propTypes = {
-  dataJob: PropTypes.objectOf(PropTypes.shape(
-    {
-      logoCompany: PropTypes.string.isRequired,
-      nameJob: PropTypes.string.isRequired,
-      nameCompany: PropTypes.string.isRequired,
-      dateJob: PropTypes.string.isRequired,
-      description: PropTypes.arrayOf(PropTypes.string).isRequired,
-    },
-  )).isRequired,
+  dataJob: PropTypes.objectOf(
+    PropTypes.oneOfType(
+      [
+        PropTypes.string,
+        PropTypes.array,
+      ],
+    ),
+  ).isRequired,
 };
 
 export default CardJob;

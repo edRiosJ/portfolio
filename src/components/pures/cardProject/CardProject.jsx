@@ -62,7 +62,7 @@ function CardProject({
 
           <div className="descriptionCardModal">
             {descriptionProyect && descriptionProyect.map((el) => (
-              <p>
+              <p key={el.slice(10)}>
                 {el}
                 <br />
                 <br />
@@ -87,7 +87,7 @@ function CardProject({
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           />
         </div>
       </Modal>
@@ -96,24 +96,15 @@ function CardProject({
 }
 
 CardProject.propTypes = {
-  dataProject: PropTypes.objectOf(PropTypes.shape(
-    {
-      logoProject: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
-      altImage: PropTypes.string.isRequired,
-      linkDeployProject: PropTypes.string.isRequired,
-      imageDeploy: PropTypes.string.isRequired,
-      linkRepositoryProject: PropTypes.string.isRequired,
-      descriptionProyect: PropTypes.arrayOf(PropTypes.string).isRequired,
-      icons: PropTypes.arrayOf(PropTypes.shape(
-        {
-          color: PropTypes.string.isRequired,
-          name: PropTypes.string.isRequired,
-          icon: PropTypes.node.isRequired,
-        },
-      )).isRequired,
-      linkVideo: PropTypes.string.isRequired,
-    },
-  )).isRequired,
+  dataProject: PropTypes.objectOf(
+    PropTypes.oneOfType(
+      [
+        PropTypes.string,
+        PropTypes.node,
+        PropTypes.array,
+      ],
+    ),
+  ).isRequired,
   functionOpenModal: PropTypes.func.isRequired,
   valueActiveModal: PropTypes.bool.isRequired,
   functionCloseModal: PropTypes.func.isRequired,
