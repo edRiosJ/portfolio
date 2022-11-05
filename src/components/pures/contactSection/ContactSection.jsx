@@ -22,21 +22,14 @@ function ContactSection()
 
   const handleSubmit = (values) =>
   {
-    const dataForm = {
-      name: values.name,
-      email: values.email,
-      subject: values.subject,
-      message: values.message,
-    };
-
-    emailjs.sendForm('gmail', 'form_contact', dataForm, 'm-lfOwPrA8C47GD0a')
+    emailjs.send('gmail', 'form_contact', values, 'm-lfOwPrA8C47GD0a')
       .then(
         (result) =>
         {
           Swal.fire(
             {
               icon: 'success',
-              title: result.text,
+              title: `Mensaje Enviado ${result.text}`,
               showConfirmButton: false,
               timer: 2000,
             },
@@ -47,7 +40,7 @@ function ContactSection()
           Swal.fire(
             {
               icon: 'error',
-              title: error.text,
+              title: `Ocurrio un error ${error.text}`,
               showConfirmButton: false,
               timer: 2000,
             },
@@ -76,19 +69,19 @@ function ContactSection()
                 <div className="mainFormContainer">
                   <div className="mainFormContainer_panelLeft">
                     <div className="inputBox">
-                      <Field id="name" name="name" type="text" autocomplete="off" />
+                      <Field id="name" name="name" type="text" autoComplete="off" />
                       <span>Nombre</span>
                       {errors.name && touched.name && (<label>{errors.name}</label>)}
                     </div>
 
                     <div className="inputBox">
-                      <Field id="email" name="email" type="email" autocomplete="off" />
+                      <Field id="email" name="email" type="email" autoComplete="off" />
                       <span>Correo</span>
                       {errors.email && touched.email && (<label>{errors.email}</label>)}
                     </div>
 
                     <div className="inputBox">
-                      <Field id="subject" name="subject" type="text" autocomplete="off" />
+                      <Field id="subject" name="subject" type="text" autoComplete="off" />
                       <span>Asunto</span>
                       {errors.subject && touched.subject && (<label>{errors.subject}</label>)}
                     </div>

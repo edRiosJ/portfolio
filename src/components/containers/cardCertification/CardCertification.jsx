@@ -31,16 +31,14 @@ function CardCertification({ certification })
 }
 
 CardCertification.propTypes = {
-  certification: PropTypes.objectOf(PropTypes.shape(
-    {
-      logoCertification: PropTypes.string.isRequired,
-      nameCertification: PropTypes.string.isRequired,
-      companyCertification: PropTypes.string.isRequired,
-      dateCertification: PropTypes.string.isRequired,
-      credentialCertification: PropTypes.string.isRequired,
-      verificationLink: PropTypes.arrayOf(PropTypes.string).isRequired,
-    },
-  )).isRequired,
+  certification: PropTypes.objectOf(
+    PropTypes.oneOfType(
+      [
+        PropTypes.string,
+        PropTypes.array,
+      ],
+    ),
+  ).isRequired,
 };
 
 export default CardCertification;

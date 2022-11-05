@@ -17,12 +17,14 @@ function ProjectsSection()
       <h2 data-aos="fade-up">Proyectos</h2>
       <div className="projectsContainer">
         <CardProject
+          key="YourCountry"
           dataProject={dataProjects[0]}
           functionOpenModal={openModalYourCountry}
           valueActiveModal={isOpenModalYourCountry}
           functionCloseModal={closeModalYourCountry}
         />
         <CardProject
+          key="PaddelApp"
           dataProject={dataProjects[1]}
           functionOpenModal={openModalPadelApp}
           valueActiveModal={isOpenModalPadelApp}
