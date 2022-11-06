@@ -8,15 +8,15 @@ import './footer.css';
 function Footer()
 {
   return (
-    <footer className="footer">
-      <div className="footer_panelLeft">
+    <footer className="footer" role="contentinfo">
+      <div className="footer-panel-left">
         <span>
           Copyright &copy; 2022 Eduardo Rios, México.
         </span>
       </div>
 
-      <div className="footer_panelCenter">
-        <div className="socialMedia">
+      <div>
+        <div className="social-media">
           <IconContext.Provider value={{ size: '2.5vw' }}>
             <a
               href="https://api.whatsapp.com/send?phone=2211805708"
@@ -43,8 +43,8 @@ function Footer()
         </div>
       </div>
 
-      <div className="footer_panelRight">
-        <img src={logo} alt="EDR" />
+      <div className="footer-panel-right">
+        <img src={logo} alt="EDR" loading="lazy" />
       </div>
     </footer>
   );

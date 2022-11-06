@@ -1,28 +1,29 @@
-.projectsSection
-{
+.projects-section {
   padding-top: 5vw;
   height: max-content;
-  background-color: #094B65;
-  background-image: url('../../../img/waveDarkSmall2.svg');
+  background-color: #094b65;
+  background-image: url("../../../img/waveDarkSmall2.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.projectsSection h2
-{
-  font-size:  3.5vw;
+.projects-section h2 {
+  font-size: 3.5vw;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #fff;
   width: 30vw;
   height: 5vw;
   margin: auto;
   text-align: center;
 }
 
-.projectsContainer
-{
+.projects-container {
   display: flex;
   justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   padding: 5vw;
 }

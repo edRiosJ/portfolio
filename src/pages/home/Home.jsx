@@ -8,13 +8,14 @@ import ExperienceSection from '../../components/pures/experienceSection/Experien
 import ParallaxSection from '../../components/pures/parallaxSection/ParallaxSection';
 import ProjectsSection from '../../components/pures/projectsSection/ProjectsSection';
 import SkillsSection from '../../components/pures/skillsSection/SkillsSection';
+import './home.css';
 
 function Home()
 {
   AOS.init();
 
   return (
-    <>
+    <main role="main">
       <ParallaxSection />
       <AboutSection />
       <ProjectsSection />
@@ -22,7 +23,7 @@ function Home()
       <SkillsSection />
       <CertificationsSection />
       <ContactSection />
-    </>
+    </main>
   );
 }
 

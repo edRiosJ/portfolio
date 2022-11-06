@@ -7,7 +7,7 @@ import './cardIconModal.css';
 function CardIconModal({ children, color, name })
 {
   return (
-    <div className="cardIconModal">
+    <div className="card-icon-modal">
       <IconContext.Provider value={{ size: '4vw', color: `${color}` }}>
         {children}
         <p>{ name }</p>

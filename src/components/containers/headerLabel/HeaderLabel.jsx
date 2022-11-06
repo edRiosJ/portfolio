@@ -7,7 +7,7 @@ import './headerLabel.css';
 function HeaderLabel({ nameLabel, directionScroll })
 {
   return (
-    <li className="header_label">
+    <li className="header-label">
       <a href={`#${directionScroll}`}>
         {nameLabel}
       </a>

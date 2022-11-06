@@ -9,7 +9,7 @@ function CardSkill({ skill })
   const { color, name, icon } = skill;
 
   return (
-    <div className="cardSkill" data-aos="zoom-out-down">
+    <div className="card-skill" data-aos="zoom-out-down">
       <IconContext.Provider value={{ size: '8vw', color: `${color}` }}>
         {icon}
         <p>{ name }</p>

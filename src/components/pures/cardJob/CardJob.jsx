@@ -13,9 +13,9 @@ function CardJob({ dataJob })
     description,
   } = dataJob;
   return (
-    <article className="cardJob">
-      <img src={logoCompany} alt={nameCompany} data-aos="fade-right" />
-      <div className="containerData" data-aos="fade-left">
+    <article className="card-job">
+      <img src={logoCompany} alt={nameCompany} data-aos="fade-right" loading="lazy" />
+      <div className="container-data" data-aos="fade-left">
         <h3>{nameCompany}</h3>
         <h4>{nameJob}</h4>
         <h5>{dateJob}</h5>
