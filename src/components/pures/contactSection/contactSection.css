@@ -1,29 +1,30 @@
-.contactSection
-{
+.contact-section {
   padding-top: 6vw;
   height: max-content;
-  background-color: #094B65;
-  background-image: url('../../../img/waveDark2.svg');
+  background-color: #094b65;
+  background-image: url("../../../img/waveDark2.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.contactSection h2
-{
-  font-size:  3.5vw;
+.contact-section h2 {
+  font-size: 3.5vw;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #fff;
   width: 30vw;
   height: 5vw;
   margin: auto;
   text-align: center;
 }
 
-.contactContainer
-{
+.contact-container {
   display: flex;
   justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   width: 100vw;
   height: max-content;
   padding-left: 5vw;
@@ -31,97 +32,110 @@
   margin-top: 2.55vw;
 }
 
-.containerCV
-{
+.container-cv {
   display: flex;
   flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
 }
 
-.form
-{
+.form {
   display: flex;
   flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   width: 54vw;
   height: 29.8vw;
   padding: 2vw;
-  background: rgba( 255, 255, 255, 0.1 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 7.5px );
-  -webkit-backdrop-filter: blur( 7.5px );
+  background: rgba(255 255 255 / 10%);
+  box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
+  backdrop-filter: blur(7.5px);
   border-radius: 0.9vw;
-  border: 0.1vw solid rgba( 255, 255, 255, 0.18 );
+  border: 0.1vw solid rgba(255 255 255 / 18%);
   margin-bottom: 5vw;
 }
 
-.mainFormContainer
-{
+.main-form-container {
   display: flex;
   width: 49.75vw;
   height: 20.15vw;
   justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   margin-top: 1vw;
 }
 
-.mainFormContainer_panelLeft,
-.mainFormContainer_panelRight
-{
+.main-form-container-panel-left,
+.main-form-container-panel-right {
   width: 24.9vw;
   height: 20.12vw;
   display: flex;
   flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
 }
 
-.secondaryFormContainer
-{
+.secondary-form-container {
   margin: 1vw;
 }
 
-.inputBox,
-.inputBox_message
-{
+.input-box,
+.input-box-message {
   position: relative;
   width: 22vw;
   height: 5.65vw;
   margin: 1vw;
   display: flex;
   flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   justify-content: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
 }
 
-.inputBox_message
-{
+.input-box-message {
   height: 17vw;
 }
 
-.inputBox input,
-#message
-{
+.input-box input,
+#message {
   width: 21.18vw;
   height: 3.6vw;
   padding: 0.75vw;
-  border: 0.1vw solid #175CAD;
+  border: 0.1vw solid #175cad;
   background: transparent;
   border-radius: 0.4vw;
   outline: none;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 1.2vw;
 }
 
-#message
-{
+#message {
   height: 16.15vw;
   resize: none;
 }
 
-.inputBox span,
-.inputBox_message span
-{
+.input-box span,
+.input-box-message span {
   position: absolute;
   left: 0;
   pointer-events: none;
@@ -130,25 +144,23 @@
   transform: translateX(0.75vw) translateY(-0.55vw);
   font-size: 0.8vw;
   padding: 0 0.75vw;
-  background: #175CAD;
+  background: #175cad;
   letter-spacing: 0.16vw;
 }
 
-.inputBox label,
-.inputBox_message label
-{
+.input-box label,
+.input-box-message label {
   color: red;
   font-size: 1.2vw;
 }
 
-.btnSend,
-.btnDownCV
-{
+.button-send,
+.button-down-cv {
   width: 9vw;
   height: 3.47vw;
-  padding: .6vw 1vw;
-  color: #ffffff;
-  background-color: #175CAD;
+  padding: 0.6vw 1vw;
+  color: #fff;
+  background-color: #175cad;
   font-size: 1.3vw;
   border-radius: 0.3vw;
   outline: none;
@@ -158,42 +170,40 @@
   cursor: pointer;
   display: flex;
   justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   text-decoration: none;
   transition: all 0.5s;
 }
 
-.iconConf
-{
-  color: #ffffff;
+.icon-conf {
+  color: #fff;
   font-size: 1.5vw;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
-.btnSend span,
-.btnDownCV span
-{
+.button-send span,
+.button-down-cv span {
   transition: 0.5s;
 }
 
-.btnSend:hover,
-.btnDownCV:hover
-{
+.button-send:hover,
+.button-down-cv:hover {
   background-color: #2f7acf;
 }
 
-.btnSend:hover span,
-.btnDownCV:hover span
-{
+.button-send:hover span,
+.button-down-cv:hover span {
   transform: translateY(10vh);
 }
 
-.btnSend:hover .iconConf
-{
-    transform: translateX(2.4vw) rotate(45deg) scale(2);
+.button-send:hover .icon-conf {
+  transform: translateX(2.4vw) rotate(45deg) scale(2);
 }
 
-.btnDownCV:hover .iconConf
-{
+.button-down-cv:hover .icon-conf {
   transform: translateX(2.4vw) scale(2);
 }

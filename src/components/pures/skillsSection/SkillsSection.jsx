@@ -6,9 +6,9 @@ import './skillsSection.css';
 function SkillsSection()
 {
   return (
-    <section className="skillsSection" id="skills">
+    <section className="skills-section" id="skills">
       <h2 data-aos="fade-up">Tecnologías</h2>
-      <div className="skillsContainer">
+      <div className="skills-container">
         {
           dataSkills && dataSkills.map((skill) => <CardSkill key={skill.name} skill={skill} />)
         }

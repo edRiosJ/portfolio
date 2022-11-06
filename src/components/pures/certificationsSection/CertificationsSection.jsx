@@ -6,9 +6,9 @@ import './certificationsSection.css';
 function CertificationsSection()
 {
   return (
-    <section className="certificationsSection" id="certifications">
+    <section className="certifications-section" id="certifications">
       <h2 data-aos="fade-up">Certificaciones</h2>
-      <div className="certificationsContainer">
+      <div className="certifications-container">
         {
           dataCertifications && dataCertifications.map((certification) => (
             <CardCertification

@@ -1,18 +1,16 @@
-.skillsSection
-{
+.skills-section {
   padding-top: 2vw;
   height: max-content;
-  background-color: #094B65;
-  background-image: url('../../../img/waveDark2.svg');
+  background-color: #094b65;
+  background-image: url("../../../img/waveDark2.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.skillsSection h2
-{
-  font-size:  3.5vw;
+.skills-section h2 {
+  font-size: 3.5vw;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #fff;
   width: 30vw;
   height: 5vw;
   margin: auto;
@@ -20,12 +18,15 @@
   margin-top: 5vw;
 }
 
-.skillsContainer
-{
+.skills-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   width: 100vw;
   height: max-content;
   padding-left: 5vw;

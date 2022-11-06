@@ -50,9 +50,9 @@ function ContactSection()
   };
 
   return (
-    <section className="contactSection" id="contact">
+    <section className="contact-section" id="contact">
       <h2 data-aos="fade-up">Contacto</h2>
-      <div className="contactContainer">
+      <div className="contact-container">
         <Formik
           initialValues={initialState}
           validationSchema={validateContactFormSchema}
@@ -66,28 +66,28 @@ function ContactSection()
             ({ errors, touched }) => (
               <Form className="form" data-aos="zoom-in-right">
 
-                <div className="mainFormContainer">
-                  <div className="mainFormContainer_panelLeft">
-                    <div className="inputBox">
+                <div className="main-form-container">
+                  <div className="main-form-container-panel-left">
+                    <div className="input-box">
                       <Field id="name" name="name" type="text" autoComplete="off" />
                       <span>Nombre</span>
                       {errors.name && touched.name && (<label>{errors.name}</label>)}
                     </div>
 
-                    <div className="inputBox">
+                    <div className="input-box">
                       <Field id="email" name="email" type="email" autoComplete="off" />
                       <span>Correo</span>
                       {errors.email && touched.email && (<label>{errors.email}</label>)}
                     </div>
 
-                    <div className="inputBox">
+                    <div className="input-box">
                       <Field id="subject" name="subject" type="text" autoComplete="off" />
                       <span>Asunto</span>
                       {errors.subject && touched.subject && (<label>{errors.subject}</label>)}
                     </div>
                   </div>
-                  <div className="mainFormContainer_panelRight">
-                    <div className="inputBox_message">
+                  <div className="main-form-container-panel-right">
+                    <div className="input-box-message">
                       <Field id="message" name="message" as="textarea" />
                       <span>Mensaje</span>
                       {errors.message && touched.message && (<label>{errors.message}</label>)}
@@ -95,9 +95,9 @@ function ContactSection()
                   </div>
                 </div>
 
-                <div className="secondaryFormContainer">
-                  <IconContext.Provider value={{ className: 'iconConf' }}>
-                    <button type="submit" className="btnSend">
+                <div className="secondary-form-container">
+                  <IconContext.Provider value={{ className: 'icon-conf' }}>
+                    <button type="submit" className="button-send">
                       <RiSendPlaneFill />
                       <span>Enviar</span>
                     </button>
@@ -107,12 +107,12 @@ function ContactSection()
             )
           }
         </Formik>
-        <div className="containerCV" data-aos="zoom-in-left">
+        <div className="container-cv" data-aos="zoom-in-left">
           <IconContext.Provider value={{ size: '15vw' }}>
             <FcBusinessman />
           </IconContext.Provider>
-          <a type="button" href={CV} className="btnDownCV" download="CV Eduardo Rios">
-            <IconContext.Provider value={{ className: 'iconConf' }}>
+          <a type="button" href={CV} className="button-down-cv" download="CV Eduardo Rios">
+            <IconContext.Provider value={{ className: 'icon-conf' }}>
               <RiDownload2Fill />
             </IconContext.Provider>
             <span>Mi CV</span>

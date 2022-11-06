@@ -1,23 +1,26 @@
-.cardSkill
-{
+.card-skill {
   display: flex;
   flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   width: 15vw;
   height: 15vw;
   margin: 1.6vw;
-  background: rgba( 255, 255, 255, 0.1 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 7.5px );
-  -webkit-backdrop-filter: blur( 7.5px );
+  background: rgba(255 255 255 / 10%);
+  box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
+  backdrop-filter: blur(7.5px);
   border-radius: 0.9vw;
-  border: 0.1vw solid rgba( 255, 255, 255, 0.18 );
+  border: 0.1vw solid rgba(255 255 255 / 18%);
 }
 
-.cardSkill p
-{
+.card-skill p {
   font-size: 1.5vw;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #fff;
 }

@@ -28,30 +28,30 @@ function CardProject({
     linkVideo,
   } = dataProject;
   return (
-    <div className="cardProject">
-      <div className="imageProject" onClick={functionOpenModal} data-aos="zoom-in-up">
+    <div className="card-project">
+      <div className="image-project" onClick={functionOpenModal} data-aos="zoom-in-up">
         {
-          typeof logoProject === 'string' ? <img src={logoProject} alt={altImage} /> : logoProject
+          typeof logoProject === 'string' ? <img src={logoProject} alt={altImage} loading="lazy" /> : logoProject
         }
       </div>
       <Modal isOpen={valueActiveModal} closeModal={functionCloseModal}>
-        <div className="logoModal">
+        <div className="logo-modal">
           {
-            typeof logoProject === 'string' ? <img src={logoProject} alt={altImage} /> : logoProject
+            typeof logoProject === 'string' ? <img src={logoProject} alt={altImage} loading="lazy" /> : logoProject
           }
         </div>
 
-        <div className="sectionModal">
-          <div className="leftPanel">
-            <div className="deployCardModal">
+        <div className="section-modal">
+          <div className="left-panel">
+            <div className="deploy-card-modal">
               <a href={linkDeployProject} target="_blank" rel="noopener noreferrer">
-                <div className="imageDeployCard">
-                  <img src={imageDeploy} alt={altImage} />
+                <div className="image-deploy-card">
+                  <img src={imageDeploy} alt={altImage} loading="lazy" />
                 </div>
               </a>
             </div>
             <IconContext.Provider value={{ size: '10vw' }}>
-              <div className="repositoryCardModal">
+              <div className="repository-card-modal">
                 <a href={linkRepositoryProject} target="_blank" rel="noopener noreferrer">
                   <BsGithub />
                 </a>
@@ -60,7 +60,7 @@ function CardProject({
             </IconContext.Provider>
           </div>
 
-          <div className="descriptionCardModal">
+          <div className="description-card-modal">
             {descriptionProyect && descriptionProyect.map((el) => (
               <p key={el.slice(10)}>
                 {el}
@@ -71,7 +71,7 @@ function CardProject({
           </div>
         </div>
 
-        <div className="techCardModal">
+        <div className="tech-card-modal">
           {
             icons && icons.map((icon) => (
               <CardIconModal color={`${icon.color}`} name={`${icon.name}`} key={icon.name}>
@@ -81,7 +81,7 @@ function CardProject({
           }
         </div>
 
-        <div className="videoModal">
+        <div className="video-modal">
           <iframe
             src={linkVideo}
             title="YouTube video player"

@@ -1,42 +1,41 @@
 .footer,
-.socialMedia
-{
+.social-media {
   display: flex;
   justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
 }
 
-.footer
-{
+.footer {
   height: 10vw;
-  background-color: rgb(119, 113, 113);
+  background-color: rgb(119 113 113);
 }
 
-.footer > div
-{
+.footer > div {
   width: 30vw;
 }
 
-.footer_panelLeft
-{
+.footer-panel-left {
   font-size: 1.3vw;
 }
 
-.socialMedia
-{
+.social-media {
   width: 15vw;
   height: 5vw;
   margin: auto;
 }
 
-.footer_panelRight
-{
+.footer-panel-right {
   display: flex;
   justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
 }
 
-.footer_panelRight img
-{
+.footer-panel-right img {
   width: 4vw;
   height: 4vw;
   object-fit: contain;
