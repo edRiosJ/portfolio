@@ -28,30 +28,30 @@ function CardProject({
     linkVideo,
   } = dataProject;
   return (
-    <div className="cardProject">
-      <div className="imageProject" onClick={functionOpenModal} data-aos="zoom-in-up">
+    <div className="card-project">
+      <div className="image-project" onClick={functionOpenModal} data-aos="zoom-in-up">
         {
-          typeof logoProject === 'string' ? <img src={logoProject} alt={altImage} /> : logoProject
+          typeof logoProject === 'string' ? <img src={logoProject} alt={altImage} loading="lazy" /> : logoProject
         }
       </div>
       <Modal isOpen={valueActiveModal} closeModal={functionCloseModal}>
-        <div className="logoModal">
+        <div className="logo-modal">
           {
-            typeof logoProject === 'string' ? <img src={logoProject} alt={altImage} /> : logoProject
+            typeof logoProject === 'string' ? <img src={logoProject} alt={altImage} loading="lazy" /> : logoProject
           }
         </div>
 
-        <div className="sectionModal">
-          <div className="leftPanel">
-            <div className="deployCardModal">
+        <div className="section-modal">
+          <div className="left-panel">
+            <div className="deploy-card-modal">
               <a href={linkDeployProject} target="_blank" rel="noopener noreferrer">
-                <div className="imageDeployCard">
-                  <img src={imageDeploy} alt={altImage} />
+                <div className="image-deploy-card">
+                  <img src={imageDeploy} alt={altImage} loading="lazy" />
                 </div>
               </a>
             </div>
             <IconContext.Provider value={{ size: '10vw' }}>
-              <div className="repositoryCardModal">
+              <div className="repository-card-modal">
                 <a href={linkRepositoryProject} target="_blank" rel="noopener noreferrer">
                   <BsGithub />
                 </a>
@@ -60,9 +60,9 @@ function CardProject({
             </IconContext.Provider>
           </div>
 
-          <div className="descriptionCardModal">
+          <div className="description-card-modal">
             {descriptionProyect && descriptionProyect.map((el) => (
-              <p>
+              <p key={el.slice(10)}>
                 {el}
                 <br />
                 <br />
@@ -71,7 +71,7 @@ function CardProject({
           </div>
         </div>
 
-        <div className="techCardModal">
+        <div className="tech-card-modal">
           {
             icons && icons.map((icon) => (
               <CardIconModal color={`${icon.color}`} name={`${icon.name}`} key={icon.name}>
@@ -81,13 +81,13 @@ function CardProject({
           }
         </div>
 
-        <div className="videoModal">
+        <div className="video-modal">
           <iframe
             src={linkVideo}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           />
         </div>
       </Modal>
@@ -96,24 +96,15 @@ function CardProject({
 }
 
 CardProject.propTypes = {
-  dataProject: PropTypes.objectOf(PropTypes.shape(
-    {
-      logoProject: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
-      altImage: PropTypes.string.isRequired,
-      linkDeployProject: PropTypes.string.isRequired,
-      imageDeploy: PropTypes.string.isRequired,
-      linkRepositoryProject: PropTypes.string.isRequired,
-      descriptionProyect: PropTypes.arrayOf(PropTypes.string).isRequired,
-      icons: PropTypes.arrayOf(PropTypes.shape(
-        {
-          color: PropTypes.string.isRequired,
-          name: PropTypes.string.isRequired,
-          icon: PropTypes.node.isRequired,
-        },
-      )).isRequired,
-      linkVideo: PropTypes.string.isRequired,
-    },
-  )).isRequired,
+  dataProject: PropTypes.objectOf(
+    PropTypes.oneOfType(
+      [
+        PropTypes.string,
+        PropTypes.node,
+        PropTypes.array,
+      ],
+    ),
+  ).isRequired,
   functionOpenModal: PropTypes.func.isRequired,
   valueActiveModal: PropTypes.bool.isRequired,
   functionCloseModal: PropTypes.func.isRequired,

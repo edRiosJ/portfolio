@@ -13,16 +13,16 @@ function CardJob({ dataJob })
     description,
   } = dataJob;
   return (
-    <article className="cardJob">
-      <img src={logoCompany} alt={nameCompany} data-aos="fade-right" />
-      <div className="containerData" data-aos="fade-left">
+    <article className="card-job">
+      <img src={logoCompany} alt={nameCompany} data-aos="fade-right" loading="lazy" />
+      <div className="container-data" data-aos="fade-left">
         <h3>{nameCompany}</h3>
         <h4>{nameJob}</h4>
         <h5>{dateJob}</h5>
         <br />
         <div>
           {description && description.map((el) => (
-            <p>
+            <p key={el.slice(10)}>
               {el}
               <br />
               <br />
@@ -35,15 +35,14 @@ function CardJob({ dataJob })
 }
 
 CardJob.propTypes = {
-  dataJob: PropTypes.objectOf(PropTypes.shape(
-    {
-      logoCompany: PropTypes.string.isRequired,
-      nameJob: PropTypes.string.isRequired,
-      nameCompany: PropTypes.string.isRequired,
-      dateJob: PropTypes.string.isRequired,
-      description: PropTypes.arrayOf(PropTypes.string).isRequired,
-    },
-  )).isRequired,
+  dataJob: PropTypes.objectOf(
+    PropTypes.oneOfType(
+      [
+        PropTypes.string,
+        PropTypes.array,
+      ],
+    ),
+  ).isRequired,
 };
 
 export default CardJob;

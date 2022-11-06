@@ -4,17 +4,17 @@ import './aboutSection.css';
 function AboutSection()
 {
   return (
-    <section className="aboutSection" id="about">
-      <div className="containerTitle__About" data-aos="fade-up">
+    <section className="about-section" id="about">
+      <div className="container-title-about" data-aos="fade-up">
         <div>Me llamo Eduardo, soy </div>
-        <div className="rotate_words">
+        <div className="rotate-words">
           <span style={{ '--d': '0s' }}>Full Stack Web Developer</span>
           <span style={{ '--d': '4s' }}>Front End Developer</span>
           <span style={{ '--d': '8s' }}>Back End Developer</span>
         </div>
       </div>
-      <div className="aboutBody">
-        <div className="aboutImage" data-aos="fade-up-right">
+      <div className="about-body">
+        <div className="about-image" data-aos="fade-up-right">
           <div className="image" />
         </div>
         <article>

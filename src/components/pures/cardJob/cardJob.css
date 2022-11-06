@@ -1,56 +1,51 @@
-.cardJob
-{
+.card-job {
   width: 90vw;
   height: max-content;
   display: flex;
   justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   margin-top: 2.48vw;
 }
 
-.cardJob img,
-.containerData
-{
-  background: rgba( 255, 255, 255, 0.1 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 7.5px );
-  -webkit-backdrop-filter: blur( 7.5px );
+.card-job img,
+.container-data {
+  background: rgba(255 255 255 / 10%);
+  box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
+  backdrop-filter: blur(7.5px);
   border-radius: 0.9vw;
-  border: 0.1vw solid rgba( 255, 255, 255, 0.18 );
+  border: 0.1vw solid rgba(255 255 255 / 18%);
 }
 
-.cardJob img
-{
+.card-job img {
   width: 20vw;
   height: 20vw;
   padding: 0.5vw;
   object-fit: cover;
 }
 
-.containerData
-{
+.container-data {
   width: 63vw;
   height: max-content;
   padding: 1.5vw;
-  color: #FFFFFF;
+  color: #fff;
 }
 
-.containerData h3
-{
+.container-data h3 {
   font-size: 1.8vw;
 }
 
-.containerData h4
-{
+.container-data h4 {
   font-size: 1.4vw;
 }
 
-.containerData h5
-{
+.container-data h5 {
   font-size: 1.2vw;
 }
 
-.containerData p
-{
+.container-data p {
   font-size: 1.3vw;
 }

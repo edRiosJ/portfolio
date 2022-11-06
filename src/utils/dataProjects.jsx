@@ -40,7 +40,7 @@ const dataProjects = [
       { color: '#52B0E7', name: 'Sequelize', icon: <SiSequelize /> },
       { color: '#336791', name: 'PostgresSQL', icon: <SiPostgresql /> },
     ],
-    linkVideo: 'https://youtu.be/f-wBPwd9FKA',
+    linkVideo: 'https://www.youtube.com/embed/f-wBPwd9FKA',
   },
   {
     logoProject: <p>PadelApp</p>,
@@ -68,7 +68,7 @@ const dataProjects = [
       { color: '#353535', name: 'Express', icon: <SiExpress /> },
       { color: '#008000', name: 'MongoDB', icon: <SiMongodb /> },
     ],
-    linkVideo: 'https://www.youtube.com/watch?v=Ruw-wEPetV4',
+    linkVideo: 'https://www.youtube.com/embed/Ruw-wEPetV4',
   },
 ];
 

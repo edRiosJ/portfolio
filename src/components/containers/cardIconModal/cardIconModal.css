@@ -1,13 +1,15 @@
-.cardIconModal
-{
+.card-icon-modal {
   display: flex;
   flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   justify-self: space-evenly;
   align-items: center;
-  margin: 1vw 1vw 0vw 1vw;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  margin: 1vw 1vw 0;
 }
 
-.cardIconModal p
-{
+.card-icon-modal p {
   font-size: 1.4vw;
 }

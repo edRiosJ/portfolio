@@ -5,10 +5,10 @@ import './navBar.css';
 function NavBar()
 {
   return (
-    <header id="header">
-      <div id="containerLogo">
-        <div id="imageLogo" />
-        <div id="textLogo">
+    <header id="header" role="navigation">
+      <div id="container-logo">
+        <div id="image-logo" />
+        <div id="text-logo">
           <span>EDR</span>
         </div>
       </div>

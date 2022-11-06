@@ -6,9 +6,9 @@ import './experienceSection.css';
 function ExperienceSection()
 {
   return (
-    <section className="experienceSection" id="experience">
+    <section className="experience-section" id="experience">
       <h2 data-aos="fade-up">Experiencia</h2>
-      <div className="experienceContainer">
+      <div className="experience-container">
         {
           dataExpierence && dataExpierence.map((job) => <CardJob key={job.nameCompany} dataJob={job} />)
         }

@@ -26,7 +26,7 @@ function Modal({ children, isOpen, closeModal })
           className="modal-close"
           onClick={closeModal}
         >
-          <IconContext.Provider value={{ size: '5vw', color: '#FF0000' }}>
+          <IconContext.Provider value={{ size: '5vw', color: '#ff0000' }}>
             <FaWindowClose />
           </IconContext.Provider>
         </button>
