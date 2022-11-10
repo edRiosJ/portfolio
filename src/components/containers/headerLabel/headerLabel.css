@@ -6,14 +6,25 @@
 .header-label a {
   text-decoration: none;
   padding: 0.3vw 0.8vw;
-  color: #fff;
-  border-radius: 2vw;
+  border-radius: 0.5vw;
   font-size: 1.21vw;
   font-family: Poppins, sans-serif;
 }
 
-.header-label a:hover,
-.header-label a.active {
-  background: #22104a;
+.header-label-lt a {
+  color: #000;
+}
+
+.header-label-dt a {
   color: #fff;
+}
+
+.header-label-lt a:hover {
+  color: #fff;
+  background: #340d4e;
+}
+
+.header-label-dt a:hover {
+  color: #000;
+  background: #8a64eb;
 }

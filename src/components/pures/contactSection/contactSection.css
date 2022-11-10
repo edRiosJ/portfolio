@@ -1,23 +1,33 @@
 .contact-section {
   padding-top: 6vw;
   height: max-content;
-  background-color: #094b65;
-  background-image: url("../../../img/waveDark2.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .contact-section h2 {
   font-size: 3.5vw;
   font-weight: 500;
-  color: #fff;
   width: 30vw;
   height: 5vw;
   margin: auto;
   text-align: center;
 }
 
-.contact-container {
+.contact-section-lt h2 {
+  color: #000;
+}
+
+.contact-section-dt h2 {
+  color: #fff;
+}
+
+.contact-container,
+.container-cv,
+.form,
+.main-form-container,
+.main-form-container-panel-left,
+.main-form-container-panel-right,
+.button-send,
+.button-down-cv {
   display: flex;
   justify-content: space-evenly;
   -webkit-box-pack: space-evenly;
@@ -25,6 +35,9 @@
   align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
+}
+
+.contact-container {
   width: 100vw;
   height: max-content;
   padding-left: 5vw;
@@ -32,27 +45,18 @@
   margin-top: 2.55vw;
 }
 
-.container-cv {
-  display: flex;
+.container-cv,
+.form,
+.main-form-container-panel-left,
+.main-form-container-panel-right,
+.input-box,
+.input-box-message {
   flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  justify-content: space-evenly;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   width: 54vw;
   height: 29.8vw;
   padding: 2vw;
@@ -65,15 +69,8 @@
 }
 
 .main-form-container {
-  display: flex;
   width: 49.75vw;
   height: 20.15vw;
-  justify-content: space-evenly;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   margin-top: 1vw;
 }
 
@@ -81,16 +78,6 @@
 .main-form-container-panel-right {
   width: 24.9vw;
   height: 20.12vw;
-  display: flex;
-  flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  justify-content: space-evenly;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
 }
 
 .secondary-form-container {
@@ -104,9 +91,6 @@
   height: 5.65vw;
   margin: 1vw;
   display: flex;
-  flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   justify-content: flex-start;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -121,12 +105,23 @@
   width: 21.18vw;
   height: 3.6vw;
   padding: 0.75vw;
-  border: 0.1vw solid #175cad;
+  border: 0.3vw solid;
   background: transparent;
   border-radius: 0.4vw;
   outline: none;
-  color: #fff;
   font-size: 1.2vw;
+}
+
+.contact-section-lt .input-box input,
+.contact-section-lt #message {
+  color: #000;
+  border-color: #8a64eb;
+}
+
+.contact-section-dt .input-box input,
+.contact-section-dt #message {
+  color: #fff;
+  border-color: #340d4e;
 }
 
 #message {
@@ -144,8 +139,21 @@
   transform: translateX(0.75vw) translateY(-0.55vw);
   font-size: 0.8vw;
   padding: 0 0.75vw;
-  background: #175cad;
   letter-spacing: 0.16vw;
+}
+
+.contact-section-lt .input-box span,
+.contact-section-lt .input-box-message span,
+.contact-section-lt .button-send,
+.contact-section-lt .button-down-cv {
+  background-color: #8a64eb;
+}
+
+.contact-section-dt .input-box span,
+.contact-section-dt .input-box-message span,
+.contact-section-dt .button-send,
+.contact-section-dt .button-down-cv {
+  background-color: #340d4e;
 }
 
 .input-box label,
@@ -168,13 +176,6 @@
   letter-spacing: 0.1vw;
   overflow: hidden;
   cursor: pointer;
-  display: flex;
-  justify-content: space-evenly;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   text-decoration: none;
   transition: all 0.5s;
 }
@@ -190,9 +191,14 @@
   transition: 0.5s;
 }
 
-.button-send:hover,
-.button-down-cv:hover {
-  background-color: #2f7acf;
+.contact-section-lt .button-send:hover,
+.contact-section-lt .button-down-cv:hover {
+  background-color: #6e3fe4;
+}
+
+.contact-section-dt .button-send:hover,
+.contact-section-dt .button-down-cv:hover {
+  background-color: #200631;
 }
 
 .button-send:hover span,

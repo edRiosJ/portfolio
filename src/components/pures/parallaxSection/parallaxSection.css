@@ -12,15 +12,23 @@
   overflow: hidden;
 }
 
-.parallax-section::before {
+.parallax-dark::before,
+.parallax-light::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 99.7vw;
+  width: 100vw;
   height: 5.95vw;
-  background: linear-gradient(to top, #094b65, transparent);
   z-index: 801;
+}
+
+.parallax-dark::before {
+  background: linear-gradient(to top, #0a5d65, transparent);
+}
+
+.parallax-light::before {
+  background: linear-gradient(to top, #64e8de, transparent);
 }
 
 .parallax-section img {

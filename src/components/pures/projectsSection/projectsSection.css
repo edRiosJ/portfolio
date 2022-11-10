@@ -1,20 +1,23 @@
 .projects-section {
   padding-top: 5vw;
   height: max-content;
-  background-color: #094b65;
-  background-image: url("../../../img/waveDarkSmall2.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .projects-section h2 {
   font-size: 3.5vw;
   font-weight: 500;
-  color: #fff;
   width: 30vw;
   height: 5vw;
   margin: auto;
   text-align: center;
+}
+
+.projects-section-lt h2 {
+  color: #000;
+}
+
+.projects-section-dt h2 {
+  color: #fff;
 }
 
 .projects-container {

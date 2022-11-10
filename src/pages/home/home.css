@@ -1,3 +1,11 @@
 main {
   overflow-x: hidden;
 }
+
+.main-lt {
+  background-color: #eeeeec;
+}
+
+.main-dt {
+  background-color: #020731;
+}
