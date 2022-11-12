@@ -4,6 +4,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap");
 
+:root {
+  --main-color-lt: #64e8de;
+  --main-color-dt: #0a5d65;
+  --secondary-color-lt: #eeeeec;
+  --secondary-color-dt: #020731;
+  --third-color-lt: #8a64eb;
+  --third-color-dt: #340d4e;
+  --color-hover-lt: #6e3fe4;
+  --color-hover-dt: #200631;
+  --color-font-lt: #000;
+  --color-font-dt: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +27,6 @@
 }
 
 .app {
-  background: #fff;
   min-height: 100vh;
 }
 

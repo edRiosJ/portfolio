@@ -31,7 +31,14 @@
   width: 63vw;
   height: max-content;
   padding: 1.5vw;
-  color: #fff;
+}
+
+.container-data-lt {
+  color: var(--color-font-lt);
+}
+
+.container-data-dt {
+  color: var(--color-font-dt);
 }
 
 .container-data h3 {

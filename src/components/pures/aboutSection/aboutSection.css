@@ -1,13 +1,23 @@
 .about-section {
   padding-top: 5vw;
   height: max-content;
-  background-color: #22104a;
-  background-image: url("../../../img/waveDark.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.container-title-about {
+.about-section-lt {
+  background-color: var(--secondary-color-lt);
+  background-image: url("../../../img/wave-lt.svg")
+}
+
+.about-section-dt {
+  background-color: var(--secondary-color-dt);
+  background-image: url("../../../img/wave-dt.svg");
+}
+
+.container-title-about,
+.about-body,
+.about-image {
   display: flex;
   justify-content: space-evenly;
   -webkit-box-pack: space-evenly;
@@ -15,6 +25,9 @@
   align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
+}
+
+.container-title-about {
   width: 90vw;
   height: 10vw;
   margin: auto;
@@ -23,9 +36,16 @@
 .container-title-about div {
   font-size: 3.5vw;
   font-weight: 500;
-  color: #fff;
   width: 40vw;
   height: 5vw;
+}
+
+.title-about-lt div {
+  color: var(--color-font-lt);
+}
+
+.title-about-dt div {
+  color: var(--color-font-dt);
 }
 
 .rotate-words span {
@@ -34,13 +54,21 @@
   letter-spacing: 0.2vw;
   font-weight: 300;
   position: absolute;
-  background-color: #175cad;
   padding-inline: 1vw;
-  color: #000;
   border-radius: 0.4vw;
   opacity: 0;
   transform-origin: 10% 75%;
   animation: rotatewords 12s var(--d) linear infinite;
+}
+
+.rotate-words-lt span {
+  background-color: var(--third-color-lt);
+  color: var(--color-font-dt);
+}
+
+.rotate-words-dt span {
+  background-color: var(--third-color-dt);
+  color: var(--color-font-lt);
 }
 
 @keyframes rotatewords {
@@ -65,13 +93,6 @@
 }
 
 .about-body {
-  display: flex;
-  justify-content: space-evenly;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   width: 100vw;
   height: 40vw;
 }
@@ -88,24 +109,24 @@
 }
 
 .about-image {
-  display: flex;
   justify-content: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   margin-left: 5vw;
 }
 
-.image {
-  width: 25vw;
-  height: 30vw;
+.image,
+.about-body article div {
   background: rgba(255 255 255 / 10%);
   box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
   backdrop-filter: blur(7.5px);
   border-radius: 0.9vw;
   border: 0.1vw solid rgba(255 255 255 / 18%);
+}
+
+.image {
+  width: 25vw;
+  height: 30vw;
   background-image: url("../../../img/me.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,10 +140,12 @@
   padding-top: 5vw;
   text-align: justify;
   font-size: 1.35vw;
-  color: #fff;
-  background: rgba(255 255 255 / 10%);
-  box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
-  backdrop-filter: blur(7.5px);
-  border-radius: 0.9vw;
-  border: 0.1vw solid rgba(255 255 255 / 18%);
+}
+
+.about-body-lt article div {
+  color: var(--color-font-lt);
+}
+
+.about-body-dt article div {
+  color: var(--color-font-dt);
 }

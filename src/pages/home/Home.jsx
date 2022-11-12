@@ -8,14 +8,17 @@ import ExperienceSection from '../../components/pures/experienceSection/Experien
 import ParallaxSection from '../../components/pures/parallaxSection/ParallaxSection';
 import ProjectsSection from '../../components/pures/projectsSection/ProjectsSection';
 import SkillsSection from '../../components/pures/skillsSection/SkillsSection';
+import ThemeContext from '../../context/theme/ThemeContext.js';
 import './home.css';
 
 function Home()
 {
   AOS.init();
 
+  const { themeValue } = React.useContext(ThemeContext);
+
   return (
-    <main role="main">
+    <main role="main" className={`${themeValue ? 'main-lt' : 'main-dt'}`}>
       <ParallaxSection />
       <AboutSection />
       <ProjectsSection />

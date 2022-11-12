@@ -8,11 +8,14 @@ import { FcBusinessman } from 'react-icons/fc';
 import { RiDownload2Fill, RiSendPlaneFill } from 'react-icons/ri';
 import { IconContext } from 'react-icons';
 import CV from '../../../files/CV Eduardo Rios.pdf';
+import ThemeContext from '../../../context/theme/ThemeContext.js';
 import validateContactFormSchema from '../../../utils/validateForm.js';
 import './contactSection.css';
 
 function ContactSection()
 {
+  const { themeValue } = React.useContext(ThemeContext);
+
   const initialState = {
     name: '',
     email: '',
@@ -50,8 +53,10 @@ function ContactSection()
   };
 
   return (
-    <section className="contact-section" id="contact">
-      <h2 data-aos="fade-up">Contacto</h2>
+    <section className={`contact-section ${themeValue ? 'contact-section-lt' : 'contact-section-dt'}`} id="contact">
+      <div data-aos="fade-up">
+        <h2>Contacto</h2>
+      </div>
       <div className="contact-container">
         <Formik
           initialValues={initialState}

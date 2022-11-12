@@ -1,19 +1,25 @@
 import React from 'react';
+import ThemeContext from '../../../context/theme/ThemeContext.js';
 import './aboutSection.css';
 
 function AboutSection()
 {
+  const { themeValue } = React.useContext(ThemeContext);
+
   return (
-    <section className="about-section" id="about">
-      <div className="container-title-about" data-aos="fade-up">
-        <div>Me llamo Eduardo, soy </div>
-        <div className="rotate-words">
-          <span style={{ '--d': '0s' }}>Full Stack Web Developer</span>
-          <span style={{ '--d': '4s' }}>Front End Developer</span>
-          <span style={{ '--d': '8s' }}>Back End Developer</span>
+    <section className={`about-section ${themeValue ? 'about-section-lt' : 'about-section-dt'}`} id="about">
+      <div data-aos="fade-up">
+        <div className={`container-title-about ${themeValue ? 'title-about-lt' : 'title-about-dt'}`}>
+          <div>Me llamo Eduardo, soy </div>
+          <div className={`rotate-words ${themeValue ? 'rotate-words-lt' : 'rotate-words-dt'}`}>
+            <span style={{ '--d': '0s' }}>Full Stack Web Developer</span>
+            <span style={{ '--d': '4s' }}>Front End Developer</span>
+            <span style={{ '--d': '8s' }}>Back End Developer</span>
+          </div>
         </div>
+
       </div>
-      <div className="about-body">
+      <div className={`about-body ${themeValue ? 'about-body-lt' : 'about-body-dt'}`}>
         <div className="about-image" data-aos="fade-up-right">
           <div className="image" />
         </div>

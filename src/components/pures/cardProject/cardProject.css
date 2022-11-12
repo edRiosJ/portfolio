@@ -11,8 +11,12 @@
   transition: background 0.5s;
 }
 
-.image-project:hover {
-  background: rgba(23 92 173 / 20%);
+.card-project-lt .image-project:hover {
+  background: rgba(138 100 235 / 70%);
+}
+
+.card-project-dt .image-project:hover {
+  background: rgba(52 13 78 / 70%);
 }
 
 .image-project img,
@@ -46,52 +50,50 @@
   font-weight: 900;
 }
 
-.section-modal {
-  width: 77.5vw;
-  height: 29.8vw;
+.section-modal,
+.left-panel {
   display: flex;
   justify-content: space-between;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   background-color: transparent;
+  height: 29.8vw;
+}
+
+.section-modal {
+  width: 77.5vw;
   margin-top: 1vw;
 }
 
-.left-panel {
-  width: 20.15vw;
-  height: 29.8vw;
-  display: flex;
+.left-panel,
+.repository-card-modal {
   flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  justify-content: space-between;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  background-color: transparent;
+}
+
+.left-panel,
+.deploy-card-modal,
+.repository-card-modal {
+  width: 20.15vw;
 }
 
 .deploy-card-modal,
 .repository-card-modal {
-  width: 20.15vw;
   height: 14.4vw;
   border-radius: 0.4vw;
   padding: 0.5vw;
 }
 
-.repository-card-modal {
+.repository-card-modal,
+.tech-card-modal {
   display: flex;
-  flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   justify-content: space-evenly;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
-  align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
 }
 
 .repository-card-modal p {
@@ -101,11 +103,11 @@
 
 .repository-card-modal a {
   cursor: pointer;
-  color: #000;
+  color: var(--color-font-lt);
 }
 
 .repository-card-modal a:visited {
-  color: #000;
+  color: var(--color-font-lt);
 }
 
 .description-card-modal {
@@ -117,33 +119,28 @@
   font-size: 1.2vw;
 }
 
-.tech-card-modal {
-  width: 77.5vw;
-  height: 14.9vw;
+.tech-card-modal,
+.video-modal {
   margin-top: 1vw;
   border-radius: 0.4vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
 }
 
+.tech-card-modal {
+  width: 77.5vw;
+  height: 14.9vw;
+  flex-wrap: wrap;
+}
+
 .video-modal {
   width: 62vw;
   height: 24.85vw;
-  margin-top: 1vw;
-  border-radius: 0.4vw;
   display: flex;
   justify-content: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   margin-left: 7.75vw;
 }
 
@@ -160,14 +157,26 @@
   cursor: pointer;
 }
 
-.logo-modal,
-.deploy-card-modal,
-.repository-card-modal,
-.description-card-modal,
-.tech-card-modal,
-.video-modal {
-  background: #094b65;
+.card-project-lt .logo-modal,
+.card-project-lt .deploy-card-modal,
+.card-project-lt .repository-card-modal,
+.card-project-lt .description-card-modal,
+.card-project-lt .tech-card-modal,
+.card-project-lt .video-modal {
+  background: var(--secondary-color-lt);
   box-shadow:
-    inset -5px -5px 5px #0a5471,
-    inset 5px 5px 5px #084259;
+    inset -5px -5px 5px #fff,
+    inset 5px 5px 5px #cfcfcd;
+}
+
+.card-project-dt .logo-modal,
+.card-project-dt .deploy-card-modal,
+.card-project-dt .repository-card-modal,
+.card-project-dt .description-card-modal,
+.card-project-dt .tech-card-modal,
+.card-project-dt .video-modal {
+  background: var(--main-color-dt);
+  box-shadow:
+    inset -5px -5px 5px #0b6871,
+    inset 5px 5px 5px #095259;
 }

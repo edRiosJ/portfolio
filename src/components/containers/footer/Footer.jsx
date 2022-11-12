@@ -2,7 +2,7 @@
 import React from 'react';
 import { IoLogoWhatsapp, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 import { IconContext } from 'react-icons';
-import logo from '../../../img/logo1.svg';
+import logo from '../../../img/logo-edr.svg';
 import './footer.css';
 
 function Footer()
