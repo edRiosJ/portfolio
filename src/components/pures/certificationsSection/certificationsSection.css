@@ -3,23 +3,6 @@
   height: max-content;
 }
 
-.certifications-section h2 {
-  font-size: 3.5vw;
-  font-weight: 500;
-  width: 30vw;
-  height: 5vw;
-  margin: auto;
-  text-align: center;
-}
-
-.certifications-section-lt h2 {
-  color: var(--color-font-lt);
-}
-
-.certifications-section-dt h2 {
-  color: var(--color-font-dt);
-}
-
 .certifications-container {
   display: flex;
   justify-content: center;

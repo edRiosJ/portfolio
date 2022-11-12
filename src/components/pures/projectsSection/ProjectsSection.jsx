@@ -5,6 +5,7 @@ import React from 'react';
 import dataProjects from '../../../utils/dataProjects';
 import CardProject from '../cardProject/CardProject';
 import ThemeContext from '../../../context/theme/ThemeContext.js';
+import TitleSection from '../../containers/titleSection/TitleSection';
 import { useModal } from '../../../hooks/useModal.jsx';
 import './projectsSection.css';
 
@@ -16,9 +17,7 @@ function ProjectsSection()
 
   return (
     <section className={`projects-section ${themeValue ? 'projects-section-lt' : 'projects-section-dt'}`} id="projects">
-      <div data-aos="fade-up">
-        <h2>Proyectos</h2>
-      </div>
+      <TitleSection title="Proyectos" />
       <div className="projects-container">
         <CardProject
           key="YourCountry"

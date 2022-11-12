@@ -3,23 +3,6 @@
   height: max-content;
 }
 
-.experience-section h2 {
-  font-size: 3.5vw;
-  font-weight: 500;
-  width: 30vw;
-  height: 5vw;
-  margin: auto;
-  text-align: center;
-}
-
-.experience-section-lt h2 {
-  color: var(--color-font-lt);
-}
-
-.experience-section-dt h2 {
-  color: var(--color-font-dt);
-}
-
 .experience-container {
   display: flex;
   flex-direction: column;
