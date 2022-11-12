@@ -25,9 +25,9 @@
 }
 
 .card-skill-lt p {
-  color: #000;
+  color: var(--color-font-lt);
 }
 
 .card-skill-dt {
-  color: #fff;
+  color: (--color-font-dt);
 }

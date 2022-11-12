@@ -103,11 +103,11 @@
 
 .repository-card-modal a {
   cursor: pointer;
-  color: #000;
+  color: var(--color-font-lt);
 }
 
 .repository-card-modal a:visited {
-  color: #000;
+  color: var(--color-font-lt);
 }
 
 .description-card-modal {
@@ -163,7 +163,7 @@
 .card-project-lt .description-card-modal,
 .card-project-lt .tech-card-modal,
 .card-project-lt .video-modal {
-  background: #eeeeec;
+  background: var(--secondary-color-lt);
   box-shadow:
     inset -5px -5px 5px #fff,
     inset 5px 5px 5px #cfcfcd;
@@ -175,7 +175,7 @@
 .card-project-dt .description-card-modal,
 .card-project-dt .tech-card-modal,
 .card-project-dt .video-modal {
-  background: #0a5d65;
+  background: var(--main-color-dt);
   box-shadow:
     inset -5px -5px 5px #0b6871,
     inset 5px 5px 5px #095259;

@@ -30,11 +30,11 @@
 }
 
 .card-container-lt {
-  color: #000;
+  color: var(--color-font-lt);
 }
 
 .card-container-dt {
-  color: #fff;
+  color: var(--color-font-dt);
 }
 
 .card-container p {
@@ -65,7 +65,7 @@
   font-size: 1.2vw;
   text-decoration: none;
   text-align: center;
-  color: #fff;
+  color: var(--color-font-dt);
   letter-spacing: 0.1vw;
   cursor: pointer;
   border-radius: 0.3vw;
@@ -73,17 +73,17 @@
 }
 
 .card-container-lt .button-card a {
-  background-color: #8a64eb
+  background-color: var(--third-color-lt);
 }
 
 .card-container-dt .button-card a {
-  background-color: #340d4e;
+  background-color: var(--third-color-dt);
 }
 
 .card-container-lt .button-card a:hover {
-  background-color: #6e3fe4;
+  background-color: var(--color-hover-lt);
 }
 
 .card-container-dt .button-card a:hover {
-  background-color: #200631;
+  background-color: var(--color-hover-dt);
 }

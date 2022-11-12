@@ -3,9 +3,9 @@ main {
 }
 
 .main-lt {
-  background-color: #eeeeec;
+  background-color: var(--secondary-color-lt);
 }
 
 .main-dt {
-  background-color: #020731;
+  background-color: var(--secondary-color-dt);
 }

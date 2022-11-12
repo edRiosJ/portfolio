@@ -36,11 +36,11 @@
 }
 
 .modal-container-lt {
-  background-color: #eeeeec;
+  background-color: var(--secondary-color-lt);
 }
 
 .modal-container-dt {
-  background-color: #0a5d65;
+  background-color: var(--main-color-dt);
 }
 
 .modal-close {

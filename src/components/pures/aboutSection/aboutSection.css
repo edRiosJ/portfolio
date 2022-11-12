@@ -6,12 +6,12 @@
 }
 
 .about-section-lt {
-  background-color: #eeeeec;
+  background-color: var(--secondary-color-lt);
   background-image: url("../../../img/wave-lt.svg")
 }
 
 .about-section-dt {
-  background-color: #020731;
+  background-color: var(--secondary-color-dt);
   background-image: url("../../../img/wave-dt.svg");
 }
 
@@ -41,11 +41,11 @@
 }
 
 .title-about-lt div {
-  color: #000;
+  color: var(--color-font-lt);
 }
 
 .title-about-dt div {
-  color: #fff;
+  color: var(--color-font-dt);
 }
 
 .rotate-words span {
@@ -62,13 +62,13 @@
 }
 
 .rotate-words-lt span {
-  background-color: #8a64eb;
-  color: #fff;
+  background-color: var(--third-color-lt);
+  color: var(--color-font-dt);
 }
 
 .rotate-words-dt span {
-  background-color: #340D4E;
-  color: #000;
+  background-color: var(--third-color-dt);
+  color: var(--color-font-lt);
 }
 
 @keyframes rotatewords {
@@ -143,9 +143,9 @@
 }
 
 .about-body-lt article div {
-  color: #000;
+  color: var(--color-font-lt);
 }
 
 .about-body-dt article div {
-  color: #fff;
+  color: var(--color-font-dt);
 }

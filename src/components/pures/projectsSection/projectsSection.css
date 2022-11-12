@@ -13,11 +13,11 @@
 }
 
 .projects-section-lt h2 {
-  color: #000;
+  color: var(--color-font-lt);
 }
 
 .projects-section-dt h2 {
-  color: #fff;
+  color: var(--color-font-dt);
 }
 
 .projects-container {

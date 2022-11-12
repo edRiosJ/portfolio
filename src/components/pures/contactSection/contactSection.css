@@ -13,11 +13,11 @@
 }
 
 .contact-section-lt h2 {
-  color: #000;
+  color: var(--color-font-lt);
 }
 
 .contact-section-dt h2 {
-  color: #fff;
+  color: var(--color-font-dt);
 }
 
 .contact-container,
@@ -68,6 +68,10 @@
   margin-bottom: 5vw;
 }
 
+.contact-section-dt .form {
+  background: rgba(255 255 255 / 20%);
+}
+
 .main-form-container {
   width: 49.75vw;
   height: 20.15vw;
@@ -114,14 +118,14 @@
 
 .contact-section-lt .input-box input,
 .contact-section-lt #message {
-  color: #000;
-  border-color: #8a64eb;
+  color: var(--color-font-lt);
+  border-color: var(--third-color-lt);
 }
 
 .contact-section-dt .input-box input,
 .contact-section-dt #message {
-  color: #fff;
-  border-color: #340d4e;
+  color: var(--color-font-dt);
+  border-color: var(--third-color-dt);
 }
 
 #message {
@@ -135,7 +139,7 @@
   left: 0;
   pointer-events: none;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--color-font-dt);
   transform: translateX(0.75vw) translateY(-0.55vw);
   font-size: 0.8vw;
   padding: 0 0.75vw;
@@ -146,19 +150,19 @@
 .contact-section-lt .input-box-message span,
 .contact-section-lt .button-send,
 .contact-section-lt .button-down-cv {
-  background-color: #8a64eb;
+  background-color: var(--third-color-lt);
 }
 
 .contact-section-dt .input-box span,
 .contact-section-dt .input-box-message span,
 .contact-section-dt .button-send,
 .contact-section-dt .button-down-cv {
-  background-color: #340d4e;
+  background-color: var(--third-color-dt);
 }
 
 .input-box label,
 .input-box-message label {
-  color: red;
+  color: #ff0000;
   font-size: 1.2vw;
 }
 
@@ -167,8 +171,7 @@
   width: 9vw;
   height: 3.47vw;
   padding: 0.6vw 1vw;
-  color: #fff;
-  background-color: #175cad;
+  color: var(--color-font-dt);
   font-size: 1.3vw;
   border-radius: 0.3vw;
   outline: none;
@@ -181,7 +184,7 @@
 }
 
 .icon-conf {
-  color: #fff;
+  color: var(--color-font-dt);
   font-size: 1.5vw;
   transition: all 0.5s;
 }
@@ -193,12 +196,12 @@
 
 .contact-section-lt .button-send:hover,
 .contact-section-lt .button-down-cv:hover {
-  background-color: #6e3fe4;
+  background-color: var(--color-hover-lt);
 }
 
 .contact-section-dt .button-send:hover,
 .contact-section-dt .button-down-cv:hover {
-  background-color: #200631;
+  background-color: var(--color-hover-dt);
 }
 
 .button-send:hover span,

@@ -5,7 +5,7 @@ import ThemeContext from '../../../context/theme/ThemeContext.js';
 import './parallaxSection.css';
 import moon from '../../../img/moon.svg';
 import mountain from '../../../img/mountain.svg';
-import rocks from '../../../img/rocks.png';
+import rocks from '../../../img/rocks.svg';
 import sky from '../../../img/sky.svg';
 import stars from '../../../img/stars.png';
 import sun from '../../../img/sun.svg';
@@ -22,7 +22,7 @@ function ParallaxSection()
   }, []);
 
   return (
-    <section className={`parallax-section ${themeValue ? 'parallax-light' : 'parallax-dark'}`} id="home">
+    <section className={`parallax-section ${themeValue ? 'parallax-section-lt' : 'parallax-section-dt'}`} id="home">
       <h2
         id="text"
         style={{ top: `${50 + scrollValue * -0.3}%` }}

@@ -34,11 +34,11 @@
 }
 
 .container-data-lt {
-  color: #000;
+  color: var(--color-font-lt);
 }
 
 .container-data-dt {
-  color: #fff;
+  color: var(--color-font-dt);
 }
 
 .container-data h3 {

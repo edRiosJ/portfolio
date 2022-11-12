@@ -12,8 +12,8 @@
   overflow: hidden;
 }
 
-.parallax-dark::before,
-.parallax-light::before {
+.parallax-section-dt::before,
+.parallax-section-lt::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -23,12 +23,12 @@
   z-index: 801;
 }
 
-.parallax-dark::before {
-  background: linear-gradient(to top, #0a5d65, transparent);
+.parallax-section-dt::before {
+  background: linear-gradient(to top, var(--main-color-dt), transparent);
 }
 
-.parallax-light::before {
-  background: linear-gradient(to top, #64e8de, transparent);
+.parallax-section-lt::before {
+  background: linear-gradient(to top, var(--main-color-lt), transparent);
 }
 
 .parallax-section img {
@@ -43,7 +43,6 @@
 
 .parallax-section #text {
   position: absolute;
-  color: #22104a;
   font-size: 10vw;
   text-align: center;
   line-height: 8.5vw;
@@ -51,4 +50,12 @@
   transform: translateY(10%);
   z-index: 300;
   height: 9vw;
+}
+
+.parallax-section-dt #text {
+  color: var(--third-color-dt);
+}
+
+.parallax-section-lt #text {
+  color: var(--third-color-lt);
 }

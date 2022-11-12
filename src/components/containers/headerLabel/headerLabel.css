@@ -12,19 +12,19 @@
 }
 
 .header-label-lt a {
-  color: #000;
+  color: var(--color-font-lt);
 }
 
 .header-label-dt a {
-  color: #fff;
+  color: var(--color-font-dt);
 }
 
 .header-label-lt a:hover {
-  color: #fff;
-  background: #340d4e;
+  color: var(--color-font-dt);
+  background: var(--third-color-dt);
 }
 
 .header-label-dt a:hover {
-  color: #000;
-  background: #8a64eb;
+  color: var(--color-font-lt);
+  background: var(--third-color-lt);
 }

@@ -19,13 +19,11 @@
 }
 
 .header-lt {
-  background-color: #8a64eb;
+  background-color: var(--third-color-lt);
 }
 
 .header-dt {
-  /* background-color: #250425; */
-  background-color: #340D4E;
-  /* background-color: #610F8C; */
+  background-color: var(--third-color-dt);
 }
 
 #container-logo {
@@ -83,17 +81,17 @@
 }
 
 .header-dt .buttons-config {
-  border-color: #8a64eb;
+  border-color: var(--third-color-lt);
 }
 
 .header-dt .buttons-config:hover {
-  background-color: #200631;
+  background-color: var(--color-hover-dt);
 }
 
 .header-lt .buttons-config {
-  border-color: #340d4e;
+  border-color: var(--third-color-dt);
 }
 
 .header-lt .buttons-config:hover {
-  background-color: #6e3fe4;
+  background-color: var(--color-hover-lt);
 }
