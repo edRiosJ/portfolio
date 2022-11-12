@@ -3,23 +3,6 @@
   height: max-content;
 }
 
-.contact-section h2 {
-  font-size: 3.5vw;
-  font-weight: 500;
-  width: 30vw;
-  height: 5vw;
-  margin: auto;
-  text-align: center;
-}
-
-.contact-section-lt h2 {
-  color: var(--color-font-lt);
-}
-
-.contact-section-dt h2 {
-  color: var(--color-font-dt);
-}
-
 .contact-container,
 .container-cv,
 .form,

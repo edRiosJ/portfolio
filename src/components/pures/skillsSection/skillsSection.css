@@ -1,24 +1,6 @@
 .skills-section {
-  padding-top: 2vw;
+  padding-top: 6vw;
   height: max-content;
-}
-
-.skills-section h2 {
-  font-size: 3.5vw;
-  font-weight: 500;
-  width: 30vw;
-  height: 5vw;
-  margin: auto;
-  text-align: center;
-  margin-top: 5vw;
-}
-
-.skills-section-lt h2 {
-  color: var(--color-font-lt);
-}
-
-.skills-section-dt h2 {
-  color: var(--color-font-dt);
 }
 
 .skills-container {

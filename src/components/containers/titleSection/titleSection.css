@@ -1,0 +1,16 @@
+.title-section {
+  font-size: 3.5vw;
+  font-weight: 500;
+  width: 100vw;
+  height: 5vw;
+  margin: auto;
+  text-align: center;
+}
+
+.title-section-lt {
+  color: var(--color-font-lt);
+}
+
+.title-section-dt {
+  color: var(--color-font-dt);
+}
