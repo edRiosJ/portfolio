@@ -8,6 +8,7 @@ import { BsGithub } from 'react-icons/bs';
 import { IconContext } from 'react-icons';
 import CardIconModal from '../../containers/cardIconModal/CardIconModal';
 import Modal from '../modal/Modal';
+import ThemeContext from '../../../context/theme/ThemeContext.js';
 import './cardProject.css';
 
 function CardProject({
@@ -27,12 +28,17 @@ function CardProject({
     icons,
     linkVideo,
   } = dataProject;
+
+  const { themeValue } = React.useContext(ThemeContext);
+
   return (
-    <div className="card-project">
-      <div className="image-project" onClick={functionOpenModal} data-aos="zoom-in-up">
-        {
-          typeof logoProject === 'string' ? <img src={logoProject} alt={altImage} loading="lazy" /> : logoProject
-        }
+    <div className={`card-project ${themeValue ? 'card-project-lt' : 'card-project-dt'}`}>
+      <div data-aos="zoom-in-up">
+        <div className="image-project" onClick={functionOpenModal}>
+          {
+            typeof logoProject === 'string' ? <img src={logoProject} alt={altImage} loading="lazy" /> : logoProject
+          }
+        </div>
       </div>
       <Modal isOpen={valueActiveModal} closeModal={functionCloseModal}>
         <div className="logo-modal">

@@ -1,3 +1,11 @@
 main {
   overflow-x: hidden;
 }
+
+.main-lt {
+  background-color: var(--secondary-color-lt);
+}
+
+.main-dt {
+  background-color: var(--secondary-color-dt);
+}

@@ -22,5 +22,12 @@
 .card-skill p {
   font-size: 1.5vw;
   font-weight: 500;
-  color: #fff;
+}
+
+.card-skill-lt p {
+  color: var(--color-font-lt);
+}
+
+.card-skill-dt {
+  color: (--color-font-dt);
 }

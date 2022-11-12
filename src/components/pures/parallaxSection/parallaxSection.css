@@ -12,15 +12,23 @@
   overflow: hidden;
 }
 
-.parallax-section::before {
+.parallax-section-dt::before,
+.parallax-section-lt::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 99.7vw;
+  width: 100vw;
   height: 5.95vw;
-  background: linear-gradient(to top, #094b65, transparent);
   z-index: 801;
+}
+
+.parallax-section-dt::before {
+  background: linear-gradient(to top, var(--main-color-dt), transparent);
+}
+
+.parallax-section-lt::before {
+  background: linear-gradient(to top, var(--main-color-lt), transparent);
 }
 
 .parallax-section img {
@@ -35,7 +43,6 @@
 
 .parallax-section #text {
   position: absolute;
-  color: #22104a;
   font-size: 10vw;
   text-align: center;
   line-height: 8.5vw;
@@ -43,4 +50,12 @@
   transform: translateY(10%);
   z-index: 300;
   height: 9vw;
+}
+
+.parallax-section-dt #text {
+  color: var(--third-color-dt);
+}
+
+.parallax-section-lt #text {
+  color: var(--third-color-lt);
 }

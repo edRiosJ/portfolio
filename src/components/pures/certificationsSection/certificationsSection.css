@@ -1,20 +1,23 @@
 .certifications-section {
   padding-top: 6vw;
   height: max-content;
-  background-color: #22104a;
-  background-image: url("../../../img/waveDarkSmall.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .certifications-section h2 {
   font-size: 3.5vw;
   font-weight: 500;
-  color: #fff;
   width: 30vw;
   height: 5vw;
   margin: auto;
   text-align: center;
+}
+
+.certifications-section-lt h2 {
+  color: var(--color-font-lt);
+}
+
+.certifications-section-dt h2 {
+  color: var(--color-font-dt);
 }
 
 .certifications-container {
