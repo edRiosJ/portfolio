@@ -12,6 +12,14 @@
   overflow: hidden;
 }
 
+.parallax-section-lt {
+  cursor: url("../../../img/rocket-lt.png"), auto;
+}
+
+.parallax-section-dt {
+  cursor: url("../../../img/rocket-dt.png"), auto;
+}
+
 .parallax-section-dt::before,
 .parallax-section-lt::before {
   content: "";

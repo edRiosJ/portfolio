@@ -1,8 +1,10 @@
-#stars {
+#stars,
+#sky {
   z-index: 100;
 }
 
-#moon {
+#moon,
+#sun {
   z-index: 200;
 }
 
