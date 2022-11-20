@@ -51,23 +51,27 @@
 }
 
 .about-container,
-.about-panel-left {
+.about-container  > div {
   display: flex;
   align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  height: max-content;
 }
 
 .about-container {
-  height: max-content;
-  margin-top: 3vw;
+  margin-top: 2vw;
 }
 
-.about-panel-left {
+.about-container  > div {
   flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   justify-content: space-evenly;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   width: 50vw;
-  height: max-content;
+  height: 36vw;
 }
 
 .container-title-about {

@@ -27,7 +27,6 @@ function NavBar()
           <HeaderLabel nameLabel="Inicio" directionScroll="home" />
           <HeaderLabel nameLabel="Sobre mí" directionScroll="about" />
           <HeaderLabel nameLabel="Proyectos" directionScroll="projects" />
-          <HeaderLabel nameLabel="Experiencia" directionScroll="experience" />
           <HeaderLabel nameLabel="Tecnologías" directionScroll="skills" />
           <HeaderLabel nameLabel="Certificaciones" directionScroll="certifications" />
           <HeaderLabel nameLabel="Contacto" directionScroll="contact" />

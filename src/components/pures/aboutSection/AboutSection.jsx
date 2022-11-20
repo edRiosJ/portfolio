@@ -1,4 +1,6 @@
 import React from 'react';
+import CardJob from '../cardJob/CardJob.jsx';
+import dataExperience from '../../../utils/dataExperience.js';
 import ThemeContext from '../../../context/theme/ThemeContext.js';
 import './aboutSection.css';
 
@@ -32,7 +34,11 @@ function AboutSection()
             </p>
           </article>
         </div>
-        {/* <div className="about-panel-right"></div> */}
+        <div className="about-panel-right">
+          {
+            dataExperience && dataExperience.map((job) => <CardJob key={job.nameCompany} dataJob={job} />)
+          }
+        </div>
       </div>
     </section>
   );
