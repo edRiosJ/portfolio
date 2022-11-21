@@ -7,14 +7,17 @@
 }
 
 #header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  width: 100vw;
-  height: 5.15vw;
+  width: 80vw;
+  height: 4vw;
   padding: 2vw 1vw;
-  justify-content: space-between;
+  justify-content: space-around;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
+  margin-left: 10vw;
+  margin-top: 2vw;
+  border-radius: 0.5vw;
   z-index: 10000;
 }
 
@@ -27,8 +30,8 @@
 }
 
 #container-logo {
-  width: 15vw;
-  height: 5vw;
+  width: max-content;
+  height: 3vw;
   padding-top: 0.1vw;
   justify-content: space-evenly;
   -webkit-box-pack: space-evenly;
@@ -36,28 +39,28 @@
 }
 
 #image-logo {
-  width: 5vw;
-  height: 5vw;
+  width: 3vw;
+  height: 3vw;
   background-image: url("../../../img/logo-edr.svg");
   background-size: contain;
   background-position: center;
 }
 
 #text-logo {
-  width: 9vw;
-  height: 5vw;
+  width: max-content;
+  height: 3vw;
+  margin-left: 0.3vw;
   color: #e94b0c;
 }
 
 #text-logo span {
   font-weight: 900;
-  font-size: 3.6vw;
+  font-size: 2.5vw;
   text-decoration: none;
   font-family: Orbitron, sans-serif;
 }
 
-.header-right-panel,
-.header-right-panel ul,
+.header-labels,
 .buttons-config {
   display: flex;
   justify-content: center;
@@ -68,16 +71,18 @@
   -ms-flex-align: center;
 }
 
-.header-right-panel ul {
+.header-labels {
   margin-right: 1vw;
+  width: max-content;
+  height: 2vw;
 }
 
 .buttons-config {
-  width: 2.5vw;
-  height: 2.5vw;
+  width: 2vw;
+  height: 2vw;
   cursor: pointer;
   border: 1px solid;
-  border-radius: 0.5vw;
+  border-radius: 0.3vw;
 }
 
 .header-dt .buttons-config {

@@ -2,7 +2,8 @@
 import React from 'react';
 import { IconContext } from 'react-icons';
 import { FcLandscape, FcNightLandscape } from 'react-icons/fc';
-import HeaderLabel from '../headerLabel/HeaderLabel';
+import dataLabelHeader from '../../../utils/dataLabelHeader.jsx';
+import HeaderLabel from '../headerLabel/HeaderLabel.jsx';
 import ThemeContext from '../../../context/theme/ThemeContext.js';
 import './navBar.css';
 
@@ -22,21 +23,19 @@ function NavBar()
           <span>EDR</span>
         </div>
       </div>
-      <div className="header-right-panel">
-        <ul>
-          <HeaderLabel nameLabel="Inicio" directionScroll="home" />
-          <HeaderLabel nameLabel="Sobre mí" directionScroll="about" />
-          <HeaderLabel nameLabel="Proyectos" directionScroll="projects" />
-          <HeaderLabel nameLabel="Tecnologías" directionScroll="skills" />
-          <HeaderLabel nameLabel="Contacto" directionScroll="contact" />
-        </ul>
-        <div className="buttons-config">
-          <IconContext.Provider value={{ size: '1.5vw' }}>
-            {
-              themeValue ? <FcLandscape onClick={setTheme} /> : <FcNightLandscape onClick={setTheme} />
-            }
-          </IconContext.Provider>
-        </div>
+      <ul className="header-labels">
+        {
+          dataLabelHeader && dataLabelHeader.map((label) => (
+            <HeaderLabel key={label.directionScroll} label={label} />
+          ))
+        }
+      </ul>
+      <div className="buttons-config">
+        <IconContext.Provider value={{ size: '1.5vw' }}>
+          {
+            themeValue ? <FcLandscape onClick={setTheme} /> : <FcNightLandscape onClick={setTheme} />
+          }
+        </IconContext.Provider>
       </div>
     </header>
   );
