@@ -2,7 +2,6 @@ import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import AboutSection from '../../components/pures/aboutSection/AboutSection.jsx';
-import CertificationsSection from '../../components/pures/certificationsSection/CertificationsSection';
 import ContactSection from '../../components/pures/contactSection/ContactSection.jsx';
 import ParallaxSection from '../../components/pures/parallaxSection/ParallaxSection';
 import ProjectsSection from '../../components/pures/projectsSection/ProjectsSection';
@@ -22,7 +21,6 @@ function Home()
       <AboutSection />
       <ProjectsSection />
       <SkillsSection />
-      <CertificationsSection />
       <ContactSection />
     </main>
   );

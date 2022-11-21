@@ -28,7 +28,6 @@ function NavBar()
           <HeaderLabel nameLabel="Sobre mí" directionScroll="about" />
           <HeaderLabel nameLabel="Proyectos" directionScroll="projects" />
           <HeaderLabel nameLabel="Tecnologías" directionScroll="skills" />
-          <HeaderLabel nameLabel="Certificaciones" directionScroll="certifications" />
           <HeaderLabel nameLabel="Contacto" directionScroll="contact" />
         </ul>
         <div className="buttons-config">
