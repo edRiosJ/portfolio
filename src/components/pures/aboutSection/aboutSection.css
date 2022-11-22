@@ -7,7 +7,7 @@
 
 .about-section-lt {
   background-color: var(--secondary-color-lt);
-  background-image: url("../../../img/wave-lt.svg")
+  background-image: url("../../../img/wave-lt.svg");
 }
 
 .about-section-dt {
@@ -38,6 +38,38 @@
   text-align: left;
 }
 
+.about-container,
+.about-container > div {
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  height: max-content;
+}
+
+.about-container > div {
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  width: 50vw;
+  height: 36vw;
+}
+
+.container-title-about div {
+  font-weight: 500;
+  width: 40vw;
+  height: 5vw;
+}
+
+.about-panel-left article p {
+  font-size: 1.3vw;
+  font-weight: 500;
+  padding-left: 1vw;
+}
+
 .about-section-lt .about-title h2,
 .about-section-lt .container-title-about div,
 .about-section-lt .about-panel-left article p {
@@ -50,45 +82,19 @@
   color: var(--color-font-dt);
 }
 
-.about-container,
-.about-container  > div {
-  display: flex;
-  align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  height: max-content;
-}
-
 .about-container {
   margin-top: 2vw;
 }
 
-.about-container  > div {
-  flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  justify-content: space-evenly;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  width: 50vw;
-  height: 36vw;
-}
-
 .container-title-about {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   -webkit-box-pack: space-around;
   -ms-flex-pack: space-around;
   width: 36vw;
   height: 4vw;
   padding-top: 1vw;
   font-size: 1.5vw;
-}
-
-.container-title-about div {
-  font-weight: 500;
-  width: 40vw;
-  height: 5vw;
 }
 
 .rotate-words span {
@@ -115,7 +121,9 @@
 }
 
 .image {
-  background: rgba(255 255 255 / 10%) url("../../../img/me.png");;
+  background:
+    rgba(255 255 255 / 10%)
+    url("../../../img/me.png");
   box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
   backdrop-filter: blur(7.5px);
   border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
@@ -125,12 +133,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   animation: morph 3.75s linear infinite;
-}
-
-.about-panel-left article p {
-  font-size: 1.3vw;
-  font-weight: 500;
-  padding-left: 1vw;
 }
 
 @keyframes rotatewords {

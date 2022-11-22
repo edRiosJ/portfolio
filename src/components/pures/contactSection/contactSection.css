@@ -9,8 +9,7 @@
 .main-form-container,
 .main-form-container-panel-left,
 .main-form-container-panel-right,
-.button-send,
-.button-down-cv {
+.button-contact-section {
   display: flex;
   justify-content: space-evenly;
   -webkit-box-pack: space-evenly;
@@ -97,6 +96,12 @@
   border-radius: 0.4vw;
   outline: none;
   font-size: 1.2vw;
+  padding-left: 1.8vw;
+}
+
+#message {
+  height: 16.15vw;
+  resize: none;
 }
 
 .contact-section-lt .input-box input,
@@ -109,11 +114,6 @@
 .contact-section-dt #message {
   color: var(--color-font-dt);
   border-color: var(--third-color-dt);
-}
-
-#message {
-  height: 16.15vw;
-  resize: none;
 }
 
 .input-box span,
@@ -129,28 +129,22 @@
   letter-spacing: 0.16vw;
 }
 
-.contact-section-lt .input-box span,
-.contact-section-lt .input-box-message span,
-.contact-section-lt .button-send,
-.contact-section-lt .button-down-cv {
-  background-color: var(--third-color-lt);
+.icon-input {
+  position: absolute;
+  font-size: 1.4vw;
+  margin-top: 1vw;
+  margin-left: 0.4vw;
 }
 
-.contact-section-dt .input-box span,
-.contact-section-dt .input-box-message span,
-.contact-section-dt .button-send,
-.contact-section-dt .button-down-cv {
-  background-color: var(--third-color-dt);
+.contact-section-lt .icon-input {
+  color: var(--third-color-lt);
 }
 
-.input-box label,
-.input-box-message label {
-  color: #ff0000;
-  font-size: 1.2vw;
+.contact-section-dt .icon-input {
+  color: var(--third-color-dt);
 }
 
-.button-send,
-.button-down-cv {
+.button-contact-section {
   width: 9vw;
   height: 3.47vw;
   padding: 0.6vw 1vw;
@@ -166,36 +160,54 @@
   transition: all 0.5s;
 }
 
+.button-contact-section span {
+  transition: 0.5s;
+}
+
+.contact-section-lt .input-box span,
+.contact-section-lt .input-box-message span,
+.contact-section-lt .button-contact-section {
+  background-color: var(--third-color-lt);
+}
+
+.contact-section-dt .input-box span,
+.contact-section-dt .input-box-message span,
+.contact-section-dt .button-contact-section {
+  background-color: var(--third-color-dt);
+}
+
+.input-box label,
+.input-box-message label {
+  color: #f00;
+  font-size: 1.2vw;
+}
+
 .icon-conf {
   color: var(--color-font-dt);
   font-size: 1.5vw;
   transition: all 0.5s;
 }
 
-.button-send span,
-.button-down-cv span {
-  transition: 0.5s;
+.icon-send {
+  transform: rotate(-45deg);
 }
 
-.contact-section-lt .button-send:hover,
-.contact-section-lt .button-down-cv:hover {
+.icon-down {
+  transform: rotate(-90deg);
+}
+
+.contact-section-lt .button-contact-section:hover {
   background-color: var(--color-hover-lt);
 }
 
-.contact-section-dt .button-send:hover,
-.contact-section-dt .button-down-cv:hover {
+.contact-section-dt .button-contact-section:hover {
   background-color: var(--color-hover-dt);
 }
 
-.button-send:hover span,
-.button-down-cv:hover span {
+.button-contact-section:hover span {
   transform: translateY(10vh);
 }
 
-.button-send:hover .icon-conf {
-  transform: translateX(2.4vw) rotate(45deg) scale(2);
-}
-
-.button-down-cv:hover .icon-conf {
+.button-contact-section:hover .icon-conf {
   transform: translateX(2.4vw) scale(2);
 }

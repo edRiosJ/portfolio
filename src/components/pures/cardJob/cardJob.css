@@ -39,7 +39,7 @@
 }
 
 .job-information,
-.job-description  {
+.job-description {
   width: 35vw;
   height: 13vw;
   overflow: hidden;
@@ -101,7 +101,13 @@
   width: 9vw;
   height: 3.1vw;
   margin: auto;
-  margin-top: 1.8vw;
+  margin-top: 1.6vw;
+}
+
+.button-job-close {
+  width: 10vw;
+  height: 2.5vw;
+  margin-left: 12.5vw;
 }
 
 .container-data-lt .button-job,
@@ -161,12 +167,6 @@
 .description-active {
   display: flex;
   animation: abled 0.5s linear;
-}
-
-.button-job-close {
-  width: 10vw;
-  height: 2.5vw;
-  margin-left: 12.5vw;
 }
 
 @keyframes abled {

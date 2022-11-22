@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-no-constructed-context-values */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { BiDetail } from 'react-icons/bi';
-import { IoMdArrowRoundBack } from 'react-icons/io';
+import { HiBackspace, HiQueueList } from 'react-icons/hi2';
 import { IconContext } from 'react-icons';
 import PropTypes from 'prop-types';
 import ThemeContext from '../../../context/theme/ThemeContext.js';
@@ -36,7 +35,7 @@ function CardJob({ dataJob })
             onClick={() => setDescriptionIsVisible(true)}
           >
             <IconContext.Provider value={{ className: 'icon-conf-job' }}>
-              <BiDetail />
+              <HiQueueList />
             </IconContext.Provider>
             <span>Detalles</span>
           </button>
@@ -56,7 +55,7 @@ function CardJob({ dataJob })
             onClick={() => setDescriptionIsVisible(false)}
           >
             <IconContext.Provider value={{ className: 'icon-conf-job' }}>
-              <IoMdArrowRoundBack />
+              <HiBackspace />
             </IconContext.Provider>
             <span>Regresar</span>
           </button>

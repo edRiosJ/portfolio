@@ -1,37 +1,37 @@
 import React from 'react';
 import {
-  AiOutlineContacts,
-  AiOutlineFire,
-  AiOutlineHome,
-  AiOutlineLaptop,
-  AiOutlineUser,
-} from 'react-icons/ai';
+  HiComputerDesktop,
+  HiEnvelopeOpen,
+  HiFire,
+  HiHome,
+  HiUser,
+} from 'react-icons/hi2';
 
 const dataLabelHeader = [
   {
     nameLabel: 'Inicio',
     directionScroll: 'home',
-    icon: <AiOutlineHome />,
+    icon: <HiHome />,
   },
   {
     nameLabel: 'Sobre mí',
     directionScroll: 'about',
-    icon: <AiOutlineUser />,
+    icon: <HiUser />,
   },
   {
     nameLabel: 'Proyectos',
     directionScroll: 'projects',
-    icon: <AiOutlineLaptop />,
+    icon: <HiComputerDesktop />,
   },
   {
     nameLabel: 'Tecnologías',
     directionScroll: 'skills',
-    icon: <AiOutlineFire />,
+    icon: <HiFire />,
   },
   {
     nameLabel: 'Contacto',
     directionScroll: 'contact',
-    icon: <AiOutlineContacts />,
+    icon: <HiEnvelopeOpen />,
   },
 ];
 

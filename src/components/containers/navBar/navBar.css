@@ -89,12 +89,12 @@
   border-color: var(--third-color-lt);
 }
 
-.header-dt .buttons-config:hover {
-  background-color: var(--color-hover-dt);
-}
-
 .header-lt .buttons-config {
   border-color: var(--third-color-dt);
+}
+
+.header-dt .buttons-config:hover {
+  background-color: var(--color-hover-dt);
 }
 
 .header-lt .buttons-config:hover {
