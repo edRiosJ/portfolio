@@ -16,39 +16,16 @@
 
 ## 🔶 Tecnologías y herramientas utilizadas
 
-<div display="flex" flex-wrap="wrap">
-  <label margin="50">
-    <img height="200" width="200" src="./img-readme/JavaScript.png" title="JavaScript">
-  </label>
-
-  <label margin="50">
-    <img height="200" width="200" src="./img-readme/react.png" title="React">
-  </label>
-
-  <label margin="50">
-    <img height="200" width="200" src="./img-readme/html.png" title="HTML">
-  </label>
-
-  <label margin="50">
-    <img height="200" width="200" src="./img-readme/css.png" title="CSS">
-  </label>
-
-  <label margin="50">
-    <img height="200" width="200" src="./img-readme/react-icons.png" title="React-icons">
-  </label>
-
-  <label margin="50">
-    <img height="200" width="200" src="./img-readme/formik.png" title="Formik">
-  </label>
-
-  <label margin="50">
-    <img height="200" width="200" src="./img-readme/git.png" title="Git">
-  </label>
-
-  <label margin="50">
-    <img height="90" width="200" src="./img-readme/sweetAlert2.png" title="SweetAlert2">
-  </label>
-</div>
+<!-- <div display="flex" flex-wrap="wrap"> -->
+  <img margin="10px" height="200" width="200" src="./img-readme/JavaScript.png" title="JavaScript">
+  <img margin="10px" height="200" width="200" src="./img-readme/react.png" title="React">
+  <img margin="10px" height="200" width="200" src="./img-readme/html.png" title="HTML">
+  <img margin="10px" height="200" width="200" src="./img-readme/css.png" title="CSS">
+  <img margin="10px" height="200" width="200" src="./img-readme/react-icons.png" title="React-icons">
+  <img margin="10px" height="200" width="200" src="./img-readme/formik.png" title="Formik">
+  <img margin="10px" height="200" width="200" src="./img-readme/git.png" title="Git">
+  <img margin="10px" height="90" width="200" src="./img-readme/sweetAlert2.png" title="SweetAlert2">
+<!-- </div> -->
 
 ## 🔶 Normas eslint durante el desarrollo
 
