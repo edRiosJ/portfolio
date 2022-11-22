@@ -22,7 +22,7 @@ Este proyecto es mi portafolio web donde podras encontrar información sobre mi 
 
 <div display="flex">
   <img height="200" width="200" src="./img-readme/JavaScript.png" title="JavaScript">
-  <!-- <img height="200" width="200" src="./img-readme/react.png" title="React"> -->
+  <img height="200" width="200" src="./img-readme/react-logo.png" title="React">
   <img height="200" width="200" src="./img-readme/html.png" title="HTML">
   <img height="200" width="200" src="./img-readme/css.png" title="CSS">
   <img height="200" width="200" src="./img-readme/react-icons.png" title="React-icons">
