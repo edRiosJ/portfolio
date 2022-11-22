@@ -18,51 +18,35 @@
 
 <div display="flex" flex-wrap="wrap">
   <label margin="50">
-    <img height="200" width="200" src="./img-readme/JavaScript.png">
-    <br>
-    <span align="center">JavaScript</span>
+    <img height="200" width="200" src="./img-readme/JavaScript.png" title="JavaScript">
   </label>
 
   <label margin="50">
-    <img height="200" width="200" src="./img-readme/react.png">
-    <br>
-    <span align="center">React</span>
+    <img height="200" width="200" src="./img-readme/react.png" title="React">
   </label>
 
   <label margin="50">
-    <img height="200" width="200" src="./img-readme/html.png">
-    <br>
-    <span align="center">HTML</span>
+    <img height="200" width="200" src="./img-readme/html.png" title="HTML">
   </label>
 
   <label margin="50">
-    <img height="200" width="200" src="./img-readme/css.png">
-    <br>
-    <span align="center">CSS</span>
+    <img height="200" width="200" src="./img-readme/css.png" title="CSS">
   </label>
 
   <label margin="50">
-    <img height="200" width="200" src="./img-readme/react-icons.png">
-    <br>
-    <span align="center">React-icons</span>
+    <img height="200" width="200" src="./img-readme/react-icons.png" title="React-icons">
   </label>
 
   <label margin="50">
-    <img height="200" width="200" src="./img-readme/formik.png">
-    <br>
-    <span align="center">Formik</span>
+    <img height="200" width="200" src="./img-readme/formik.png" title="Formik">
   </label>
 
   <label margin="50">
-    <img height="200" width="200" src="./img-readme/git.png">
-    <br>
-    <span align="center">Git</span>
+    <img height="200" width="200" src="./img-readme/git.png" title="Git">
   </label>
 
   <label margin="50">
-    <img height="90" width="200" src="./img-readme/sweetAlert2.png">
-    <br>
-    <span align="center">SweetAlert2</span>
+    <img height="90" width="200" src="./img-readme/sweetAlert2.png" title="SweetAlert2">
   </label>
 </div>
 
