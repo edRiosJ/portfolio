@@ -1,23 +1,6 @@
 .projects-section {
-  padding-top: 5vw;
-  height: max-content;
-}
-
-.projects-section h2 {
-  font-size: 3.5vw;
-  font-weight: 500;
-  width: 30vw;
-  height: 5vw;
-  margin: auto;
-  text-align: center;
-}
-
-.projects-section-lt h2 {
-  color: var(--color-font-lt);
-}
-
-.projects-section-dt h2 {
-  color: var(--color-font-dt);
+  padding-top: 6.5vw;
+  height: 27vw;
 }
 
 .projects-container {

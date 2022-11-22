@@ -1,38 +1,33 @@
 .skills-section {
-  padding-top: 2vw;
+  padding-top: 6.5vw;
   height: max-content;
 }
 
-.skills-section h2 {
-  font-size: 3.5vw;
-  font-weight: 500;
-  width: 30vw;
-  height: 5vw;
-  margin: auto;
-  text-align: center;
-  margin-top: 5vw;
-}
-
-.skills-section-lt h2 {
-  color: var(--color-font-lt);
-}
-
-.skills-section-dt h2 {
-  color: var(--color-font-dt);
-}
-
-.skills-container {
+.skills-container,
+.certifications-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   width: 100vw;
   height: max-content;
+  margin-top: 1.5vw;
+}
+
+.skills-container {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   padding-left: 5vw;
   padding-right: 5vw;
-  margin-top: 1.5vw;
+}
+
+.certifications-container {
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  flex-wrap: wrap;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }

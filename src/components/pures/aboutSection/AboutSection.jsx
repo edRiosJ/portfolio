@@ -1,4 +1,6 @@
 import React from 'react';
+import CardJob from '../cardJob/CardJob.jsx';
+import dataExperience from '../../../utils/dataExperience.js';
 import ThemeContext from '../../../context/theme/ThemeContext.js';
 import './aboutSection.css';
 
@@ -8,32 +10,35 @@ function AboutSection()
 
   return (
     <section className={`about-section ${themeValue ? 'about-section-lt' : 'about-section-dt'}`} id="about">
-      <div data-aos="fade-up">
-        <div className={`container-title-about ${themeValue ? 'title-about-lt' : 'title-about-dt'}`}>
-          <div>Me llamo Eduardo, soy </div>
-          <div className={`rotate-words ${themeValue ? 'rotate-words-lt' : 'rotate-words-dt'}`}>
-            <span style={{ '--d': '0s' }}>Full Stack Web Developer</span>
-            <span style={{ '--d': '4s' }}>Front End Developer</span>
-            <span style={{ '--d': '8s' }}>Back End Developer</span>
-          </div>
+      <div data-aos="fade-right">
+        <div className="about-title">
+          <h2>Sobre mí</h2>
         </div>
-
       </div>
-      <div className={`about-body ${themeValue ? 'about-body-lt' : 'about-body-dt'}`}>
-        <div className="about-image" data-aos="fade-up-right">
+      <div className="about-container">
+        <div className="about-panel-left">
           <div className="image" />
+          <article>
+            <div className="container-title-about">
+              <div>Me llamo Eduardo, soy </div>
+              <div className="rotate-words">
+                <span style={{ '--d': '0s' }}>Ing. en Ciencias de la Computación</span>
+                <span style={{ '--d': '4s' }}>Front End Developer</span>
+                <span style={{ '--d': '8s' }}>Back End Developer</span>
+              </div>
+            </div>
+            <p>
+              🔥 Tengo una pasión por la programación.
+              <br />
+              🔥 Creando soluciones a traves de codigo.
+            </p>
+          </article>
         </div>
-        <article>
-          <div data-aos="fade-up-left">
-            <p>
-              🔹 Soy Ingeniero en Ciencias de la Computación, desarrollador web Full Stack y Técnico en Informática. Siempre he estado interesado por el mundo de la tecnología por lo cual descubrí la programación, despertando en mi una pasión por la misma.
-            </p>
-            <br />
-            <p>
-              🔹 Soy una persona curiosa, por lo cual me gusta aventurarme en nuevas experiencias y estar en un estado de continuo aprendizaje. Me gusta salir de mi zona de confort, gracias a ello he podido obtener y madurar habilidades como la inteligencia emocional, tolerancia a la frustración, creatividad, toma de decisiones, adaptación al cambio, empatía, entre otras.
-            </p>
-          </div>
-        </article>
+        <div className="about-panel-right">
+          {
+            dataExperience && dataExperience.map((job) => <CardJob key={job.nameCompany} dataJob={job} />)
+          }
+        </div>
       </div>
     </section>
   );

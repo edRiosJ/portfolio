@@ -5,10 +5,18 @@ import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { Formik, Form, Field } from 'formik';
 import { FcBusinessman } from 'react-icons/fc';
-import { RiDownload2Fill, RiSendPlaneFill } from 'react-icons/ri';
+import {
+  HiArchiveBox,
+  HiArrowDownCircle,
+  HiChatBubbleBottomCenterText,
+  HiEnvelope,
+  HiPaperAirplane,
+  HiUser,
+} from 'react-icons/hi2';
 import { IconContext } from 'react-icons';
 import CV from '../../../files/CV Eduardo Rios.pdf';
 import ThemeContext from '../../../context/theme/ThemeContext.js';
+import TitleSection from '../../containers/titleSection/TitleSection.jsx';
 import validateContactFormSchema from '../../../utils/validateForm.js';
 import './contactSection.css';
 
@@ -54,9 +62,7 @@ function ContactSection()
 
   return (
     <section className={`contact-section ${themeValue ? 'contact-section-lt' : 'contact-section-dt'}`} id="contact">
-      <div data-aos="fade-up">
-        <h2>Contacto</h2>
-      </div>
+      <TitleSection title="Contacto" />
       <div className="contact-container">
         <Formik
           initialValues={initialState}
@@ -75,18 +81,27 @@ function ContactSection()
                   <div className="main-form-container-panel-left">
                     <div className="input-box">
                       <Field id="name" name="name" type="text" autoComplete="off" />
+                      <IconContext.Provider value={{ className: 'icon-input' }}>
+                        <HiUser />
+                      </IconContext.Provider>
                       <span>Nombre</span>
                       {errors.name && touched.name && (<label>{errors.name}</label>)}
                     </div>
 
                     <div className="input-box">
                       <Field id="email" name="email" type="email" autoComplete="off" />
+                      <IconContext.Provider value={{ className: 'icon-input' }}>
+                        <HiEnvelope />
+                      </IconContext.Provider>
                       <span>Correo</span>
                       {errors.email && touched.email && (<label>{errors.email}</label>)}
                     </div>
 
                     <div className="input-box">
                       <Field id="subject" name="subject" type="text" autoComplete="off" />
+                      <IconContext.Provider value={{ className: 'icon-input' }}>
+                        <HiArchiveBox />
+                      </IconContext.Provider>
                       <span>Asunto</span>
                       {errors.subject && touched.subject && (<label>{errors.subject}</label>)}
                     </div>
@@ -94,6 +109,9 @@ function ContactSection()
                   <div className="main-form-container-panel-right">
                     <div className="input-box-message">
                       <Field id="message" name="message" as="textarea" />
+                      <IconContext.Provider value={{ className: 'icon-input' }}>
+                        <HiChatBubbleBottomCenterText />
+                      </IconContext.Provider>
                       <span>Mensaje</span>
                       {errors.message && touched.message && (<label>{errors.message}</label>)}
                     </div>
@@ -101,9 +119,9 @@ function ContactSection()
                 </div>
 
                 <div className="secondary-form-container">
-                  <IconContext.Provider value={{ className: 'icon-conf' }}>
-                    <button type="submit" className="button-send">
-                      <RiSendPlaneFill />
+                  <IconContext.Provider value={{ className: 'icon-conf icon-send' }}>
+                    <button type="submit" className="button-contact-section">
+                      <HiPaperAirplane />
                       <span>Enviar</span>
                     </button>
                   </IconContext.Provider>
@@ -116,9 +134,9 @@ function ContactSection()
           <IconContext.Provider value={{ size: '15vw' }}>
             <FcBusinessman />
           </IconContext.Provider>
-          <a type="button" href={CV} className="button-down-cv" download="CV Eduardo Rios">
-            <IconContext.Provider value={{ className: 'icon-conf' }}>
-              <RiDownload2Fill />
+          <a type="button" href={CV} className="button-contact-section" download="CV Eduardo Rios">
+            <IconContext.Provider value={{ className: 'icon-conf icon-down' }}>
+              <HiArrowDownCircle />
             </IconContext.Provider>
             <span>Mi CV</span>
           </a>

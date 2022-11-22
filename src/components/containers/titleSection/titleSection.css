@@ -1,0 +1,30 @@
+.title-section {
+  width: 30vw;
+  height: 5vw;
+  border-radius: 0 2vw 2vw 0;
+  padding-left: 5vw;
+}
+
+.title-section-lt {
+  background-color: var(--main-color-lt);
+}
+
+.title-section-dt {
+  background-color: var(--main-color-dt);
+}
+
+.title-section h2 {
+  font-size: 3.5vw;
+  font-weight: 500;
+  height: 5vw;
+  margin: auto;
+  text-align: left;
+}
+
+.title-section-lt h2 {
+  color: var(--color-font-lt);
+}
+
+.title-section-dt h2 {
+  color: var(--color-font-dt);
+}
