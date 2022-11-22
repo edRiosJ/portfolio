@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# ✨ Mi Portafolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img height="200" width="200" src="./src/img/logo-edr.svg" />
+</p>
 
-## Available Scripts
+## 🔶 Acerca del proyecto
 
-In the project directory, you can run:
+Este proyecto es mi portafolio web donde podras encontrar información sobre mi perfil profesional.
 
-### `npm start`
+## 🔶 Imagenes del proyecto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Home Light theme.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="./img-readme/portfolio-light.png">
 
-### `npm test`
+- Home Dark theme.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="./img-readme/portfolio-dark.png">
 
-### `npm run build`
+## 🔶 Tecnologías y herramientas utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div display="flex">
+  <img height="200" width="200" src="./img-readme/JavaScript.png" title="JavaScript">
+  <img height="200" width="200" src="./img-readme/react-logo.png" title="React">
+  <img height="200" width="200" src="./img-readme/html.png" title="HTML">
+  <img height="200" width="200" src="./img-readme/css.png" title="CSS">
+  <img height="200" width="200" src="./img-readme/react-icons.png" title="React-icons">
+  <img height="200" width="200" src="./img-readme/formik.png" title="Formik">
+  <img height="200" width="200" src="./img-readme/git.png" title="Git">
+  <img height="90" width="200" src="./img-readme/sweetAlert2.png" title="SweetAlert2">
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔶 Normas ESLint durante el desarrollo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<div display="flex">
+  <img height="200" width="200" src="./img-readme/eslint-airbnb.png" title="ESLint-AirBnB">
+  <img height="200" width="200" src="./img-readme/stylelint.png" title="Stylelint">
+</div>
 
-### `npm run eject`
+## 🔶 Creditos de imágenes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<a href="https://www.freepik.es/vector-gratis/animales-mecanicos-robots-aguila-panda-lagarto-perro-foca-conjunto-dibujos-animados-vectoriales-mascotas-mecanicas-futuristas-pajaros-metal-reptiles-osos-lobos-leones-marinos-cyborgs-maquinas-electronicas_22273261.htm#query=wolf&position=22&from_view=search&track=sph" target="_blank">Imagen de upklyak</a> en Freepik
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<a href="https://www.freepik.es/vector-gratis/lindo-astronauta-montando-cohete-agitando-mano-icono-dibujos-animados-ilustracion-concepto-icono-tecnologia-ciencia_10764053.htm#query=rocket&position=40&from_view=search&track=sph" target="_blank">Imagen de catalyststuff</a> en Freepik
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<a href="https://www.freepik.es/vector-gratis/lindo-astronauta-bailando-ilustracion-icono-vector-dibujos-animados-cohete-icono-ciencia-tecnologia-aislado_31789043.htm#page=20&position=1&from_view=author" target="_blank">Imagen de catalyststuff</a> en Freepik
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Imagen de <a href="https://www.freepik.es/vector-gratis/fondo-constelacion-abstracta-gradiente_5441235.htm#query=stars&position=3&from_view=search&track=sph" target="_blank">Freepik</a>
 
-## Learn More
+Imagen de <a href="https://www.freepik.es/vector-gratis/fondo-paisaje-luna-llena_1107751.htm#query=moon&position=19&from_view=search&track=sph" target="_blank">Freepik</a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="https://www.freepik.com/free-vector/natural-environment-lanscape-scene_5837826.htm" target="_blank">Image by brgfx</a> on Freepik
