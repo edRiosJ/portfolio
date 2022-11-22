@@ -20,49 +20,49 @@
   <div margin="10">
     <img height="200" width="200" src="./img-readme/JavaScript.png">
     <br>
-    <pre display="block">    JavaScript</pre>
+    <span>JavaScript</span>
   </div>
 
   <div margin="10">
     <img height="200" width="200" src="./img-readme/react.png">
     <br>
-    <pre display="block">    React</pre>
+    <span>React</span>
   </div>
 
   <div margin="10">
     <img height="200" width="200" src="./img-readme/html.png">
     <br>
-    <pre display="block">    HTML</pre>
+    <span>HTML</span>
   </div>
 
   <div margin="10">
     <img height="200" width="200" src="./img-readme/css.png">
     <br>
-    <pre display="block">    CSS</pre>
+    <span>CSS</span>
   </div>
 
   <div margin="10">
     <img height="200" width="200" src="./img-readme/react-icons.png">
     <br>
-    <pre display="block">    React-icons</pre>
+    <span>React-icons</span>
   </div>
 
   <div margin="10">
     <img height="200" width="200" src="./img-readme/formik.png">
     <br>
-    <pre display="block">    Formik</pre>
+    <span>Formik</span>
   </div>
 
   <div margin="10">
     <img height="200" width="200" src="./img-readme/git.png">
     <br>
-    <pre display="block">    Git</pre>
+    <span>Git</span>
   </div>
 
   <div margin="10">
     <img height="90" width="200" src="./img-readme/sweetAlert2.png">
     <br>
-    <pre display="block">    SweetAlert2</pre>
+    <span>SweetAlert2</span>
   </div>
 </div>
 
