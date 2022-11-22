@@ -9,25 +9,35 @@
   align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  width: 15vw;
-  height: 15vw;
+  width: 11vw;
+  height: 11vw;
   margin: 1.6vw;
-  background: rgba(255 255 255 / 10%);
-  box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
-  backdrop-filter: blur(7.5px);
-  border-radius: 0.9vw;
   border: 0.1vw solid rgba(255 255 255 / 18%);
+  transition: 0.3s linear;
 }
 
-.card-skill p {
-  font-size: 1.5vw;
-  font-weight: 500;
-}
-
-.card-skill-lt p {
+.card-skill-lt {
+  background-color: var(--secondary-color-lt);
+  box-shadow:
+    inset 20px 20px 20px rgba(0 0 0 / 5%),
+    25px 35px 20px rgba(0 0 0 / 5%),
+    25px 30px 30px rgba(0 0 0 / 5%),
+    inset -20px -20px 25px rgba(255 255 255 / 90%);
   color: var(--color-font-lt);
 }
 
 .card-skill-dt {
-  color: (--color-font-dt);
+  background-color: rgba(255 255 255 / 10%);
+  box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
+  backdrop-filter: blur(7.5px);
+  color: var(--color-font-dt);
+}
+
+.card-skill:hover {
+  border-radius: 50% !important;
+}
+
+.card-skill p {
+  font-size: 1.2vw;
+  font-weight: 500;
 }

@@ -8,10 +8,12 @@ function TitleSection({ title })
   const { themeValue } = React.useContext(ThemeContext);
 
   return (
-    <div data-aos="fade-up">
-      <h2 className={`title-section ${themeValue ? 'title-section-lt' : 'title-section-dt'}`}>
-        {title}
-      </h2>
+    <div data-aos="fade-right">
+      <div className={`title-section ${themeValue ? 'title-section-lt' : 'title-section-dt'}`}>
+        <h2>
+          {title}
+        </h2>
+      </div>
     </div>
   );
 }

@@ -10,10 +10,15 @@ function CardSkill({ skill })
   const { color, name, icon } = skill;
   const { themeValue } = React.useContext(ThemeContext);
 
+  const getBorderValue = () => Math.floor((Math.random() * (75 - 25 + 1)) + 25);
+
   return (
-    <div data-aos="zoom-out-down">
-      <div className={`card-skill ${themeValue ? 'card-skill-lt' : 'card-skill-dt'}`}>
-        <IconContext.Provider value={{ size: '8vw', color: `${color}` }}>
+    <div data-aos="zoom-in">
+      <div
+        className={`card-skill ${themeValue ? 'card-skill-lt' : 'card-skill-dt'}`}
+        style={{ borderRadius: `${getBorderValue()}% ${getBorderValue()}% ${getBorderValue()}% ${getBorderValue()}% / ${getBorderValue()}% ${getBorderValue()}% ${getBorderValue()}% ${getBorderValue()}%` }}
+      >
+        <IconContext.Provider value={{ size: '5vw', color: `${color}` }}>
           {icon}
           <p>{ name }</p>
         </IconContext.Provider>

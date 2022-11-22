@@ -4,11 +4,18 @@
 }
 
 .header-label a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   padding: 0.3vw 0.8vw;
   border-radius: 0.5vw;
   font-size: 1.21vw;
   font-family: Poppins, sans-serif;
+}
+
+.header-label a span {
+  margin-left: 0.3vw;
 }
 
 .header-label-lt a {
@@ -21,10 +28,8 @@
 
 .header-label-lt a:hover {
   color: var(--color-font-dt);
-  background: var(--third-color-dt);
 }
 
 .header-label-dt a:hover {
-  color: var(--color-font-lt);
-  background: var(--third-color-lt);
+  color: #e94b0c;
 }
