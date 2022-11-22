@@ -33,3 +33,8 @@
   <img height="200" width="200" src="./img-readme/eslint-airbnb.png" title="EsLint-AirBnB">
   <img height="200" width="200" src="./img-readme/stylelint.png" title="Stylelint">
 </div>
+
+## 🔶 Creditos de imagenes
+
+<a href="http://www.freepik.com">Designed by catalyststuff / Freepik</a>
+
