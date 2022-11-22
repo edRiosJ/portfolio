@@ -17,53 +17,45 @@
 ## 🔶 Tecnologías y herramientas utilizadas
 
 <div display="flex" flex-wrap="wrap">
-  <div margin="10">
+  <label margin="50">
     <img height="200" width="200" src="./img-readme/JavaScript.png">
-    <br>
-    <span>JavaScript</span>
-  </div>
+    <span align="center">JavaScript</span>
+  </label>
 
-  <div margin="10">
+  <label margin="50">
     <img height="200" width="200" src="./img-readme/react.png">
-    <br>
-    <span>React</span>
-  </div>
+    <span align="center">React</span>
+  </label>
 
-  <div margin="10">
+  <label margin="50">
     <img height="200" width="200" src="./img-readme/html.png">
-    <br>
-    <span>HTML</span>
-  </div>
+    <span align="center">HTML</span>
+  </label>
 
-  <div margin="10">
+  <label margin="50">
     <img height="200" width="200" src="./img-readme/css.png">
-    <br>
-    <span>CSS</span>
-  </div>
+    <span align="center">CSS</span>
+  </label>
 
-  <div margin="10">
+  <label margin="50">
     <img height="200" width="200" src="./img-readme/react-icons.png">
-    <br>
-    <span>React-icons</span>
-  </div>
+    <span align="center">React-icons</span>
+  </label>
 
-  <div margin="10">
+  <label margin="50">
     <img height="200" width="200" src="./img-readme/formik.png">
-    <br>
-    <span>Formik</span>
-  </div>
+    <span align="center">Formik</span>
+  </label>
 
-  <div margin="10">
+  <label margin="50">
     <img height="200" width="200" src="./img-readme/git.png">
-    <br>
-    <span>Git</span>
-  </div>
+    <span align="center">Git</span>
+  </label>
 
-  <div margin="10">
+  <label margin="50">
     <img height="90" width="200" src="./img-readme/sweetAlert2.png">
-    <br>
-    <span>SweetAlert2</span>
-  </div>
+    <span align="center">SweetAlert2</span>
+  </label>
 </div>
 
 ## 🔶 Normas eslint durante el desarrollo
