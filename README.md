@@ -17,52 +17,52 @@
 ## 🔶 Tecnologías y herramientas utilizadas
 
 <div display="flex" flex-wrap="wrap">
-  <div margin="50">
+  <div margin="10">
     <img height="200" width="200" src="./img-readme/JavaScript.png">
     <br>
-    <pre>        JavaScript</pre>
+    <pre display="block">    JavaScript</pre>
   </div>
 
-  <div margin="50">
+  <div margin="10">
     <img height="200" width="200" src="./img-readme/react.png">
     <br>
-    <pre>        React</pre>
+    <pre display="block">    React</pre>
   </div>
 
-  <div margin="50">
+  <div margin="10">
     <img height="200" width="200" src="./img-readme/html.png">
     <br>
-    <pre>        HTML</pre>
+    <pre display="block">    HTML</pre>
   </div>
 
-  <div margin="50">
+  <div margin="10">
     <img height="200" width="200" src="./img-readme/css.png">
     <br>
-    <pre>        CSS</pre>
+    <pre display="block">    CSS</pre>
   </div>
 
-  <div margin="50">
+  <div margin="10">
     <img height="200" width="200" src="./img-readme/react-icons.png">
     <br>
-    <pre>        React-icons</pre>
+    <pre display="block">    React-icons</pre>
   </div>
 
-  <div margin="50">
+  <div margin="10">
     <img height="200" width="200" src="./img-readme/formik.png">
     <br>
-    <pre>        Formik</pre>
+    <pre display="block">    Formik</pre>
   </div>
 
-  <div margin="50">
+  <div margin="10">
     <img height="200" width="200" src="./img-readme/git.png">
     <br>
-    <pre>        Git</pre>
+    <pre display="block">    Git</pre>
   </div>
 
-  <div margin="50">
+  <div margin="10">
     <img height="90" width="200" src="./img-readme/sweetAlert2.png">
     <br>
-    <pre>        SweetAlert2</pre>
+    <pre display="block">    SweetAlert2</pre>
   </div>
 </div>
 
