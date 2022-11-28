@@ -1,18 +1,23 @@
 import React from 'react';
 import CardJob from '../cardJob/CardJob.jsx';
 import dataExperience from '../../../utils/dataExperience.js';
+import { dataAbout } from '../../../utils/dataPortfolio.js';
+import LanguageContext from '../../../context/language/LanguageContext';
 import ThemeContext from '../../../context/theme/ThemeContext.js';
 import './aboutSection.css';
 
 function AboutSection()
 {
+  const { languageValue } = React.useContext(LanguageContext);
   const { themeValue } = React.useContext(ThemeContext);
+
+  const dataSection = languageValue ? { ...dataAbout.spanish } : { ...dataAbout.english };
 
   return (
     <section className={`about-section ${themeValue ? 'about-section-lt' : 'about-section-dt'}`} id="about">
       <div data-aos="fade-right">
         <div className="about-title">
-          <h2>Sobre mí</h2>
+          <h2>{dataSection.title}</h2>
         </div>
       </div>
       <div className="about-container">
@@ -20,17 +25,17 @@ function AboutSection()
           <div className="image" />
           <article>
             <div className="container-title-about">
-              <div>Me llamo Eduardo, soy </div>
+              <div>{dataSection.im}</div>
               <div className="rotate-words">
-                <span style={{ '--d': '0s' }}>Ing. en Ciencias de la Computación</span>
+                <span style={{ '--d': '0s' }}>{dataSection.eng}</span>
                 <span style={{ '--d': '4s' }}>Front End Developer</span>
                 <span style={{ '--d': '8s' }}>Back End Developer</span>
               </div>
             </div>
             <p>
-              🔥 Tengo una pasión por la programación.
+              {dataSection.text1}
               <br />
-              🔥 Creando soluciones a traves de codigo.
+              {dataSection.text2}
             </p>
           </article>
         </div>

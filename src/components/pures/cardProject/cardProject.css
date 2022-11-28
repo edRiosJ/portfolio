@@ -19,9 +19,7 @@
   background: rgba(52 13 78 / 70%);
 }
 
-.image-project img,
-.logo-modal img,
-.image-deploy-card img {
+:is(.image-project img, .logo-modal img, .image-deploy-card img) {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -50,8 +48,7 @@
   font-weight: 900;
 }
 
-.section-modal,
-.left-panel {
+:is(.section-modal, .left-panel) {
   display: flex;
   justify-content: space-between;
   -webkit-box-pack: justify;
@@ -65,8 +62,7 @@
   margin-top: 1vw;
 }
 
-.left-panel,
-.repository-card-modal {
+:is(.left-panel, .repository-card-modal) {
   flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -75,21 +71,17 @@
   -ms-flex-align: center;
 }
 
-.left-panel,
-.deploy-card-modal,
-.repository-card-modal {
+:is(.left-panel, .deploy-card-modal, .repository-card-modal) {
   width: 20.15vw;
 }
 
-.deploy-card-modal,
-.repository-card-modal {
+:is(.deploy-card-modal, .repository-card-modal) {
   height: 14.4vw;
   border-radius: 0.4vw;
   padding: 0.5vw;
 }
 
-.repository-card-modal,
-.tech-card-modal {
+:is(.repository-card-modal, .tech-card-modal) {
   display: flex;
   justify-content: space-evenly;
   -webkit-box-pack: space-evenly;
@@ -119,8 +111,7 @@
   font-size: 1.2vw;
 }
 
-.tech-card-modal,
-.video-modal {
+:is(.tech-card-modal, .video-modal) {
   margin-top: 1vw;
   border-radius: 0.4vw;
   align-items: center;
@@ -157,24 +148,24 @@
   cursor: pointer;
 }
 
-.card-project-lt .logo-modal,
+:is(.card-project-lt .logo-modal,
 .card-project-lt .deploy-card-modal,
 .card-project-lt .repository-card-modal,
 .card-project-lt .description-card-modal,
 .card-project-lt .tech-card-modal,
-.card-project-lt .video-modal {
+.card-project-lt .video-modal) {
   background: var(--secondary-color-lt);
   box-shadow:
     inset -5px -5px 5px #fff,
     inset 5px 5px 5px #cfcfcd;
 }
 
-.card-project-dt .logo-modal,
+:is(.card-project-dt .logo-modal,
 .card-project-dt .deploy-card-modal,
 .card-project-dt .repository-card-modal,
 .card-project-dt .description-card-modal,
 .card-project-dt .tech-card-modal,
-.card-project-dt .video-modal {
+.card-project-dt .video-modal) {
   background: var(--main-color-dt);
   box-shadow:
     inset -5px -5px 5px #0b6871,

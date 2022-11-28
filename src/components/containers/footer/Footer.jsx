@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-constructed-context-values */
 import React from 'react';
 import { IoLogoWhatsapp, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 import { IconContext } from 'react-icons';
@@ -11,7 +10,7 @@ function Footer()
     <footer className="footer" role="contentinfo">
       <div className="footer-panel-left">
         <span>
-          Copyright &copy; 2022 Eduardo Rios, México.
+          Copyright &copy; 2022 Eduardo Rios.
         </span>
       </div>
 

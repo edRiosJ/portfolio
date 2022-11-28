@@ -1,6 +1,4 @@
-.container-data,
-.button-job,
-.button-job-close {
+:is(.container-data, .button-job, .button-job-close) {
   display: flex;
   align-items: center;
   -webkit-box-align: center;
@@ -38,15 +36,13 @@
   background-color: var(--main-color-dt);
 }
 
-.job-information,
-.job-description {
+:is(.job-information, .job-description) {
   width: 35vw;
   height: 13vw;
   overflow: hidden;
 }
 
-.information-disabled,
-.description-disabled {
+:is(.information-disabled, .description-disabled) {
   display: none;
 }
 
@@ -75,16 +71,13 @@
   font-size: 1.1vw;
 }
 
-.button-job,
-.job-description,
-.button-job-close {
+:is(.button-job, .job-description, .button-job-close) {
   justify-content: space-evenly;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
 }
 
-.button-job,
-.button-job-close {
+:is(.button-job, .button-job-close) {
   padding: 0.6vw 1vw;
   color: var(--color-font-dt);
   font-size: 1.1vw;
@@ -110,13 +103,19 @@
   margin-left: 12.5vw;
 }
 
-.container-data-lt .button-job,
-.container-data-lt .button-job-close {
+.button-english {
+  justify-content: center;
+}
+
+.button-english span {
+  margin-left: 0.5vw;
+}
+
+:is(.container-data-lt .button-job, .container-data-lt .button-job-close) {
   background-color: var(--third-color-lt);
 }
 
-.container-data-dt .button-job,
-.container-data-dt .button-job-close {
+:is(.container-data-dt .button-job, .container-data-dt .button-job-close) {
   background-color: var(--third-color-dt);
 }
 
@@ -126,23 +125,19 @@
   transition: all 0.5s;
 }
 
-.button-job span,
-.button-job-close span {
+:is(.button-job span, .button-job-close span) {
   transition: 0.5s;
 }
 
-.container-data-lt .button-job:hover,
-.container-data-lt .button-job-close:hover {
+:is(.container-data-lt .button-job:hover, .container-data-lt .button-job-close:hover) {
   background-color: var(--color-hover-lt);
 }
 
-.container-data-dt .button-job:hover,
-.container-data-dt .button-job-close:hover {
+:is(.container-data-dt .button-job:hover, .container-data-dt .button-job-close:hover) {
   background-color: var(--color-hover-dt);
 }
 
-.button-job:hover span,
-.button-job-close:hover span {
+:is(.button-job:hover span, .button-job-close:hover span) {
   transform: translateY(5vw);
 }
 
@@ -152,6 +147,10 @@
 
 .button-job-close:hover .icon-conf-job {
   transform: translateX(3vw) scale(2);
+}
+
+.button-english:hover .icon-conf-job {
+  transform: translateX(1.5vw) scale(2);
 }
 
 .job-description {

@@ -1,10 +1,8 @@
-#stars,
-#sky {
+:is(#stars, #sky) {
   z-index: 100;
 }
 
-#moon,
-#sun {
+:is(#moon, #sun) {
   z-index: 200;
 }
 

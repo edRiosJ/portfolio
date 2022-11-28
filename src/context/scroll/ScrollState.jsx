@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ScrollReducer from './ScrollReducer.js';
 import ScrollContext from './ScrollContext.js';
+import { SET_SCROLL } from '../types.js';
 
-// eslint-disable-next-line react/prop-types
 function ScrollState({ children })
 {
   const initialState = {
@@ -13,23 +14,20 @@ function ScrollState({ children })
 
   const setScroll = () => {
     dispatch({
-      type: 'SET_SCROLL',
+      type: SET_SCROLL,
       payload: window.scrollY,
     });
   };
 
   return (
-    <ScrollContext.Provider value={
-      // eslint-disable-next-line react/jsx-no-constructed-context-values
-      {
-        scrollValue: state.scrollValue,
-        setScroll,
-      }
-    }
-    >
+    <ScrollContext.Provider value={{ scrollValue: state.scrollValue, setScroll }}>
       {children}
     </ScrollContext.Provider>
   );
 }
+
+ScrollState.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default ScrollState;

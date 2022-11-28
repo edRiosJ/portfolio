@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-no-constructed-context-values */
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
@@ -15,14 +13,20 @@ import {
 } from 'react-icons/hi2';
 import { IconContext } from 'react-icons';
 import CV from '../../../files/CV Eduardo Rios.pdf';
+import CVEnglish from '../../../files/CV Eduardo Rios English.pdf';
+import LanguageContext from '../../../context/language/LanguageContext.js';
 import ThemeContext from '../../../context/theme/ThemeContext.js';
 import TitleSection from '../../containers/titleSection/TitleSection.jsx';
-import validateContactFormSchema from '../../../utils/validateForm.js';
+import { dataContact } from '../../../utils/dataPortfolio.js';
+import { validateFormSpanish, validateFormEnglish } from '../../../utils/validateForm.js';
 import './contactSection.css';
 
 function ContactSection()
 {
+  const { languageValue } = React.useContext(LanguageContext);
   const { themeValue } = React.useContext(ThemeContext);
+
+  const dataSection = languageValue ? { ...dataContact.spanish } : { ...dataContact.english };
 
   const initialState = {
     name: '',
@@ -40,7 +44,7 @@ function ContactSection()
           Swal.fire(
             {
               icon: 'success',
-              title: `Mensaje Enviado ${result.text}`,
+              title: `${dataSection.msgSuccess} ${result.text}`,
               showConfirmButton: false,
               timer: 2000,
             },
@@ -51,7 +55,7 @@ function ContactSection()
           Swal.fire(
             {
               icon: 'error',
-              title: `Ocurrio un error ${error.text}`,
+              title: `${dataSection.msgError} ${error.text}`,
               showConfirmButton: false,
               timer: 2000,
             },
@@ -62,11 +66,11 @@ function ContactSection()
 
   return (
     <section className={`contact-section ${themeValue ? 'contact-section-lt' : 'contact-section-dt'}`} id="contact">
-      <TitleSection title="Contacto" />
+      <TitleSection title={dataSection.title} />
       <div className="contact-container">
         <Formik
           initialValues={initialState}
-          validationSchema={validateContactFormSchema}
+          validationSchema={languageValue ? validateFormSpanish : validateFormEnglish}
           onSubmit={(values, { resetForm }) =>
           {
             handleSubmit(values);
@@ -84,7 +88,7 @@ function ContactSection()
                       <IconContext.Provider value={{ className: 'icon-input' }}>
                         <HiUser />
                       </IconContext.Provider>
-                      <span>Nombre</span>
+                      <span>{dataSection.labelName}</span>
                       {errors.name && touched.name && (<label>{errors.name}</label>)}
                     </div>
 
@@ -93,7 +97,7 @@ function ContactSection()
                       <IconContext.Provider value={{ className: 'icon-input' }}>
                         <HiEnvelope />
                       </IconContext.Provider>
-                      <span>Correo</span>
+                      <span>{dataSection.labelEmail}</span>
                       {errors.email && touched.email && (<label>{errors.email}</label>)}
                     </div>
 
@@ -102,7 +106,7 @@ function ContactSection()
                       <IconContext.Provider value={{ className: 'icon-input' }}>
                         <HiArchiveBox />
                       </IconContext.Provider>
-                      <span>Asunto</span>
+                      <span>{dataSection.labelSubject}</span>
                       {errors.subject && touched.subject && (<label>{errors.subject}</label>)}
                     </div>
                   </div>
@@ -112,7 +116,7 @@ function ContactSection()
                       <IconContext.Provider value={{ className: 'icon-input' }}>
                         <HiChatBubbleBottomCenterText />
                       </IconContext.Provider>
-                      <span>Mensaje</span>
+                      <span>{dataSection.labelMessage}</span>
                       {errors.message && touched.message && (<label>{errors.message}</label>)}
                     </div>
                   </div>
@@ -122,7 +126,7 @@ function ContactSection()
                   <IconContext.Provider value={{ className: 'icon-conf icon-send' }}>
                     <button type="submit" className="button-contact-section">
                       <HiPaperAirplane />
-                      <span>Enviar</span>
+                      <span>{dataSection.textButtonSend}</span>
                     </button>
                   </IconContext.Provider>
                 </div>
@@ -134,11 +138,11 @@ function ContactSection()
           <IconContext.Provider value={{ size: '15vw' }}>
             <FcBusinessman />
           </IconContext.Provider>
-          <a type="button" href={CV} className="button-contact-section" download="CV Eduardo Rios">
+          <a type="button" href={languageValue ? CV : CVEnglish} className="button-contact-section" download="CV Eduardo Rios">
             <IconContext.Provider value={{ className: 'icon-conf icon-down' }}>
               <HiArrowDownCircle />
             </IconContext.Provider>
-            <span>Mi CV</span>
+            <span>{dataSection.textButtonCV}</span>
           </a>
         </div>
       </div>

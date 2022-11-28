@@ -1,5 +1,4 @@
-.card-certification,
-.button-card {
+:is(.card-certification, .button-card) {
   display: flex;
   justify-content: space-evenly;
   -webkit-box-pack: space-evenly;

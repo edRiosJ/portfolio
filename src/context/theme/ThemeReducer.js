@@ -7,10 +7,7 @@ export default function ThemeReducer(state, action)
   switch (type)
   {
     case SET_THEME:
-      return {
-        ...state,
-        themeValue: payload,
-      };
+      return { themeValue: payload };
     default:
       return state;
   }
