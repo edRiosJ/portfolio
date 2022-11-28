@@ -51,3 +51,7 @@ Imagen de <a href="https://www.freepik.es/vector-gratis/fondo-constelacion-abstr
 Imagen de <a href="https://www.freepik.es/vector-gratis/fondo-paisaje-luna-llena_1107751.htm#query=moon&position=19&from_view=search&track=sph" target="_blank">Freepik</a>
 
 <a href="https://www.freepik.com/free-vector/natural-environment-lanscape-scene_5837826.htm" target="_blank">Image by brgfx</a> on Freepik
+
+<a href="https://www.flaticon.com/free-icons/united-states" title="united states icons">United states icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/flags" title="flags icons">Flags icons created by Freepik - Flaticon</a>

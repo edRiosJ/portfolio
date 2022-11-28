@@ -1,15 +1,19 @@
-/* eslint-disable react/jsx-no-constructed-context-values */
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { IconContext } from 'react-icons';
+import LanguageContext from '../../../context/language/LanguageContext.js';
 import ThemeContext from '../../../context/theme/ThemeContext.js';
 import './headerLabel.css';
 
 function HeaderLabel({ label })
 {
-  const { nameLabel, directionScroll, icon } = label;
+  const {
+    nameLabelSpanish,
+    nameLabelEnglish,
+    directionScroll,
+    icon,
+  } = label;
+  const { languageValue } = React.useContext(LanguageContext);
   const { themeValue } = React.useContext(ThemeContext);
 
   return (
@@ -18,7 +22,9 @@ function HeaderLabel({ label })
         <IconContext.Provider value={{ size: '1.21vw' }}>
           {icon}
         </IconContext.Provider>
-        <span>{nameLabel}</span>
+        <span>
+          {languageValue ? nameLabelSpanish : nameLabelEnglish}
+        </span>
       </a>
     </li>
   );

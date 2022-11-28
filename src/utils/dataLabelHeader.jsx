@@ -9,27 +9,32 @@ import {
 
 const dataLabelHeader = [
   {
-    nameLabel: 'Inicio',
+    nameLabelSpanish: 'Inicio',
+    nameLabelEnglish: 'Home',
     directionScroll: 'home',
     icon: <HiHome />,
   },
   {
-    nameLabel: 'Sobre mí',
+    nameLabelSpanish: 'Sobre mí',
+    nameLabelEnglish: 'About',
     directionScroll: 'about',
     icon: <HiUser />,
   },
   {
-    nameLabel: 'Proyectos',
+    nameLabelSpanish: 'Proyectos',
+    nameLabelEnglish: 'Projects',
     directionScroll: 'projects',
     icon: <HiComputerDesktop />,
   },
   {
-    nameLabel: 'Tecnologías',
+    nameLabelSpanish: 'Tecnologías',
+    nameLabelEnglish: 'Skills',
     directionScroll: 'skills',
     icon: <HiFire />,
   },
   {
-    nameLabel: 'Contacto',
+    nameLabelSpanish: 'Contacto',
+    nameLabelEnglish: 'Contact',
     directionScroll: 'contact',
     icon: <HiEnvelopeOpen />,
   },

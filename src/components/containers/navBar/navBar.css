@@ -1,5 +1,4 @@
-#header,
-#container-logo {
+:is(#header, #container-logo) {
   display: flex;
   align-items: center;
   -webkit-box-align: center;
@@ -60,8 +59,7 @@
   font-family: Orbitron, sans-serif;
 }
 
-.header-labels,
-.buttons-config {
+:is(.header-labels, .buttons-config, .container-options) {
   display: flex;
   justify-content: center;
   -webkit-box-pack: center;
@@ -73,7 +71,8 @@
 
 .header-labels {
   margin-right: 1vw;
-  width: max-content;
+  justify-content: space-between;
+  width: 48.25vw;
   height: 2vw;
 }
 
@@ -83,6 +82,13 @@
   cursor: pointer;
   border: 1px solid;
   border-radius: 0.3vw;
+  margin-left: 0.5vw;
+}
+
+.buttons-config img {
+  width: 1.5vw;
+  height: 1.5vw;
+  object-fit: cover;
 }
 
 .header-dt .buttons-config {

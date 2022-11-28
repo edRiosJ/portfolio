@@ -7,10 +7,7 @@ export default function ScrollReducer(state, action)
   switch (type)
   {
     case SET_SCROLL:
-      return {
-        ...state,
-        scrollValue: payload,
-      };
+      return { scrollValue: payload };
     default:
       return state;
   }
