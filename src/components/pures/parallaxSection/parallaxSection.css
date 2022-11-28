@@ -20,7 +20,8 @@
   cursor: url("../../../img/rocket-dt.png"), auto;
 }
 
-:is(.parallax-section-dt::before, .parallax-section-lt::before) {
+.parallax-section-dt::before,
+.parallax-section-lt::before {
   content: "";
   position: absolute;
   bottom: 0;
