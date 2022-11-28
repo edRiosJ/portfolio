@@ -3,13 +3,13 @@
   height: max-content;
 }
 
-.contact-container,
+:is(.contact-container,
 .container-cv,
 .form,
 .main-form-container,
 .main-form-container-panel-left,
 .main-form-container-panel-right,
-.button-contact-section {
+.button-contact-section) {
   display: flex;
   justify-content: space-evenly;
   -webkit-box-pack: space-evenly;
@@ -27,12 +27,12 @@
   margin-top: 2.55vw;
 }
 
-.container-cv,
+:is(.container-cv,
 .form,
 .main-form-container-panel-left,
 .main-form-container-panel-right,
 .input-box,
-.input-box-message {
+.input-box-message) {
   flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -60,8 +60,7 @@
   margin-top: 1vw;
 }
 
-.main-form-container-panel-left,
-.main-form-container-panel-right {
+:is(.main-form-container-panel-left, .main-form-container-panel-right) {
   width: 24.9vw;
   height: 20.12vw;
 }
@@ -70,8 +69,7 @@
   margin: 1vw;
 }
 
-.input-box,
-.input-box-message {
+:is(.input-box, .input-box-message) {
   position: relative;
   width: 22vw;
   height: 5.65vw;
@@ -86,8 +84,7 @@
   height: 17vw;
 }
 
-.input-box input,
-#message {
+:is(.input-box input, #message) {
   width: 21.18vw;
   height: 3.6vw;
   padding: 0.75vw;
@@ -104,20 +101,17 @@
   resize: none;
 }
 
-.contact-section-lt .input-box input,
-.contact-section-lt #message {
+:is(.contact-section-lt .input-box input, .contact-section-lt #message) {
   color: var(--color-font-lt);
   border-color: var(--third-color-lt);
 }
 
-.contact-section-dt .input-box input,
-.contact-section-dt #message {
+:is(.contact-section-dt .input-box input, .contact-section-dt #message) {
   color: var(--color-font-dt);
   border-color: var(--third-color-dt);
 }
 
-.input-box span,
-.input-box-message span {
+:is(.input-box span, .input-box-message span) {
   position: absolute;
   left: 0;
   pointer-events: none;
@@ -164,20 +158,20 @@
   transition: 0.5s;
 }
 
-.contact-section-lt .input-box span,
+:is(.contact-section-lt .input-box span,
 .contact-section-lt .input-box-message span,
-.contact-section-lt .button-contact-section {
+.contact-section-lt .button-contact-section) {
   background-color: var(--third-color-lt);
 }
 
-.contact-section-dt .input-box span,
+:is(.contact-section-dt .input-box span,
 .contact-section-dt .input-box-message span,
-.contact-section-dt .button-contact-section {
+.contact-section-dt .button-contact-section) {
   background-color: var(--third-color-dt);
 }
 
-.input-box label,
-.input-box-message label {
+:is(.input-box label,
+.input-box-message label) {
   color: #f00;
   font-size: 1.2vw;
 }

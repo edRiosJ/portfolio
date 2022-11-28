@@ -3,8 +3,7 @@
   height: max-content;
 }
 
-.skills-container,
-.certifications-container {
+:is(.skills-container, .certifications-container) {
   display: flex;
   align-items: center;
   -webkit-box-align: center;

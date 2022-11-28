@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ThemeReducer from './ThemeReducer.js';
 import ThemeContext from './ThemeContext.js';
+import { SET_THEME } from '../types.js';
 
-// eslint-disable-next-line react/prop-types
 function ThemeState({ children })
 {
   const initialState = {
@@ -13,23 +14,20 @@ function ThemeState({ children })
 
   const setTheme = () => {
     dispatch({
-      type: 'SET_THEME',
+      type: SET_THEME,
       payload: !state.themeValue,
     });
   };
 
   return (
-    <ThemeContext.Provider value={
-      // eslint-disable-next-line react/jsx-no-constructed-context-values
-      {
-        themeValue: state.themeValue,
-        setTheme,
-      }
-    }
-    >
+    <ThemeContext.Provider value={{ themeValue: state.themeValue, setTheme }}>
       {children}
     </ThemeContext.Provider>
   );
 }
+
+ThemeState.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default ThemeState;

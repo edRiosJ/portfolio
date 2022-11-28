@@ -6,7 +6,8 @@ const dataCertifications = [
     logoCertification: azureCertification,
     nameCertification: 'Azure Fundamentals (Az-900)',
     companyCertification: 'Microsoft',
-    dateCertification: 'Agosto 2022',
+    dateCertificationSpanish: 'Agosto 2022',
+    dateCertificationEnglish: 'August 2022',
     credentialCertification: 'wEAJH-48Eq',
     verificationLink: [
       'https://www.certiport.com/portal/pages/credentialverification.aspx',
@@ -17,7 +18,8 @@ const dataCertifications = [
     logoCertification: javaCertification,
     nameCertification: 'Introduction to Programming using Java',
     companyCertification: 'Microsoft',
-    dateCertification: 'Junio 2022',
+    dateCertificationSpanish: 'Junio 2022',
+    dateCertificationEnglish: 'June 2022',
     credentialCertification: 'nBPc-DwQv',
     verificationLink: [
       'https://www.certiport.com/portal/pages/credentialverification.aspx',

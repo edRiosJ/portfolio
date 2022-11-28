@@ -1,5 +1,4 @@
-.modal,
-.modal-close {
+:is(.modal, .modal-close) {
   justify-content: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -21,8 +20,7 @@
   padding-top: 7vw;
 }
 
-.modal.modal-open,
-.modal-close {
+:is(.modal.modal-open, .modal-close) {
   display: flex;
 }
 
